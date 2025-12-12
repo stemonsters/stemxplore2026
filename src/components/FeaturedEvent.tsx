@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import { Brain, Cpu, Atom, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,10 +13,7 @@ export default function FeaturedEvent() {
 
             <div className="container mx-auto px-4 relative z-10">
                 {/* Featured Event Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                <div
                     className="grid lg:grid-cols-2 gap-12 lg:gap-32 items-center mb-32"
                 >
                     {/* Left Column */}
@@ -26,11 +23,11 @@ export default function FeaturedEvent() {
                             Launch Event
                         </div>
 
-                        <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
-                            HANDS-ON STEM <br />
-                            <span className="text-primary">IN THE AGE OF AI</span>
+                        <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight tracking-tight">
+                            CAN AI IMPROVE COGNITIVE SKILLS <br />
+                            <span className="text-primary">WITHOUT EMOTIONAL SKILLS?</span>
                         </h2>
-                        <span className="block text-xl md:text-2xl font-medium text-muted-foreground tracking-tight">Expert Panel Discussion</span>
+                        <span className="block text-lg md:text-xl font-medium text-muted-foreground tracking-tight">Expert Panel Discussion • 7-8 PM IST • 3 Panelists</span>
 
                         {/* Decorative Element */}
                         <div className="absolute -z-10 -top-20 -left-20 opacity-[0.05] pointer-events-none">
@@ -42,7 +39,7 @@ export default function FeaturedEvent() {
                     <div className="flex flex-col justify-center relative">
                         <div className="pl-8 border-l-2 border-primary/20">
                             <p className="text-lg md:text-xl text-muted-foreground mb-12 font-light leading-relaxed">
-                                Analyzing the intersection of Artificial Intelligence and tactile learning methodologies. Join industry leaders as they discuss the future of education.
+                                Can artificial intelligence enhance our cognitive abilities while neglecting emotional intelligence? Join our expert panelists as they explore this critical question shaping the future of education and human development.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
@@ -61,25 +58,20 @@ export default function FeaturedEvent() {
                             </div>
 
                             <div className="flex flex-col items-start gap-2 mt-4">
-                                <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest">MEET THE PANELISTS BELOW</span>
+                                <Button className="rounded-none bg-primary text-primary-foreground hover:bg-primary/90 border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all cursor-default px-8 py-4 text-lg">
+                                    Register for Webinar
+                                </Button>
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Expert Panel Section (Merged) */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                >
+                <div>
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 border-b border-border pb-6 text-center md:text-left">
                         <div>
                             <h2 className="text-3xl font-bold mb-2">Expert Panel</h2>
                         </div>
-                        <Button className="hidden md:inline-flex rounded-none bg-primary text-primary-foreground hover:bg-primary/90 border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                            Register Now <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Button>
                     </div>
 
                     <div className="relative overflow-hidden rounded-xl border border-border bg-card/30 p-12 text-center backdrop-blur-sm">
@@ -106,11 +98,7 @@ export default function FeaturedEvent() {
                             </div>
                         </div>
                     </div>
-
-                    <Button className="w-full md:hidden mt-8 rounded-none bg-primary text-primary-foreground hover:bg-primary/90 border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                        Register Now <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

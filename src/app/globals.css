@@ -135,6 +135,13 @@
   }
 }
 
+/* Content width constraint - backgrounds extend full, content is 80vw */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80vw !important;
+  }
+}
+
 @keyframes gradient-flow {
   0% {
     background-position: 100% 50%;

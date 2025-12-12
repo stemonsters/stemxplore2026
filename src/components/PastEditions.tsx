@@ -1,13 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 export default function PastEditions() {
     const years = [2025, 2024, 2023, 2022];
 
     return (
-        <section className="py-20 bg-background border-b border-border">
+        <section className="py-20 bg-background border-t border-b border-border">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-2 md:gap-0">
                     <h2 className="text-3xl font-bold">Past Editions</h2>
@@ -16,12 +16,8 @@ export default function PastEditions() {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {years.map((year, index) => (
-                        <motion.div
+                        <div
                             key={year}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             className="group cursor-pointer"
                         >
                             <div className="aspect-video bg-muted relative overflow-hidden border border-border group-hover:border-primary transition-colors">
@@ -47,7 +43,7 @@ export default function PastEditions() {
                                     <span className="text-xs font-bold">Vol {year}</span>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

@@ -9,6 +9,7 @@ import JudgesMentors from "@/components/JudgesMentors";
 import Schedule from "@/components/Schedule";
 import About from "@/components/About";
 import SchoolRegistration from "@/components/SchoolRegistration";
+import StudentRegistration from "@/components/StudentRegistration";
 import EventPartners from "@/components/EventPartners";
 import Support from "@/components/Support";
 import PastEditions from "@/components/PastEditions";
@@ -29,6 +30,7 @@ export default function Home() {
       <EventPartners />
       <SchoolRegistration />
       <Support />
+      <StudentRegistration />
       <PastEditions />
       <Footer />
     </main>

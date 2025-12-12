@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { motion } from "framer-motion";
+
 import { Users, Lightbulb, MessageSquare, BookOpen, Trophy, Code, Cpu } from "lucide-react";
 
 export default function EventBlocks() {
@@ -9,45 +9,30 @@ export default function EventBlocks() {
         {
             title: "Panel Discussion",
             icon: <Users className="w-5 h-5" />,
-            description: "Expert insights on STEM future.",
+            description: "Can AI improve cognitive skills without emotional skills?",
         },
         {
-            title: "STEM Challenge",
+            title: "Keynote Speech",
             icon: <Lightbulb className="w-5 h-5" />,
-            description: "Live problem-solving.",
-        },
-        {
-            title: "Let's Talk STEM",
-            icon: <MessageSquare className="w-5 h-5" />,
-            description: "Share your vision.",
-        },
-        {
-            title: "My Tech Story",
-            icon: <BookOpen className="w-5 h-5" />,
-            description: "Innovation journeys.",
+            description: "Inspiring talk on the future of STEM.",
         },
     ];
 
     const rightColumnEvents = [
         {
-            title: "Quiz Whiz",
-            icon: <Lightbulb className="w-5 h-5" />,
-            description: "Rapid-fire science quiz.",
+            title: "Let's Talk STEM",
+            icon: <MessageSquare className="w-5 h-5" />,
+            description: "\"Science is not necessary when we have AI\"",
         },
         {
-            title: "Innovation Showcase",
-            icon: <Trophy className="w-5 h-5" />,
-            description: "Global project presentation.",
+            title: "Story Behind My Tech",
+            icon: <BookOpen className="w-5 h-5" />,
+            description: "Water sustainability solutions.",
         },
         {
-            title: "Innovation Challenge",
+            title: "Junior Hackathon",
             icon: <Code className="w-5 h-5" />,
-            description: "24h innovation sprint.",
-        },
-        {
-            title: "Robotics Expo",
-            icon: <Cpu className="w-5 h-5" />,
-            description: "Automation display.",
+            description: "Scratch programming - 72 hours.",
         },
     ];
 
@@ -58,12 +43,8 @@ export default function EventBlocks() {
             </div>
             <div className="divide-y divide-border">
                 {events.map((event, index) => (
-                    <motion.div
+                    <div
                         key={index}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.05 }}
                         className="group hover:bg-primary/5 transition-colors cursor-pointer p-4 flex items-start gap-4"
                     >
                         <div className="mt-1 text-muted-foreground group-hover:text-primary transition-colors">
@@ -75,7 +56,7 @@ export default function EventBlocks() {
                             </div>
                             <p className="text-sm text-muted-foreground line-clamp-1">{event.description}</p>
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
         </div>

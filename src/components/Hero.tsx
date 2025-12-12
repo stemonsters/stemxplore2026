@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+
 import { Calendar, ArrowRight, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -14,10 +14,7 @@ export default function Hero() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-12 gap-12 items-center">
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
+                    <div
                         className="lg:col-span-8"
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6 md:mb-8">
@@ -62,15 +59,12 @@ export default function Hero() {
                             <div className="w-px h-4 bg-border" />
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4 text-accent" />
-                                <span>01.03.2026</span>
+                                <span>08.03.2026</span>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
+                    <div
                         className="lg:col-span-4 hidden lg:block"
                     >
                         <div className="relative aspect-square border border-border bg-card/50 p-2">
@@ -89,7 +83,7 @@ export default function Hero() {
                                 />
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

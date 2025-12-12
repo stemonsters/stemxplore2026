@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { motion } from "framer-motion";
+
 import { Heart, Gift, ShoppingBag, Handshake, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Support() {
@@ -16,10 +16,7 @@ export default function Support() {
                 <div className="grid lg:grid-cols-12 gap-12 items-start">
                     {/* Left Side: Why Support */}
                     <div className="lg:col-span-5">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
+                        <div
                             className="sticky top-24"
                         >
                             <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6">
@@ -44,16 +41,12 @@ export default function Support() {
                                     <div className="text-xs text-muted-foreground uppercase tracking-wider">Partner Schools</div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* Right Side: How to Support Tabs */}
                     <div className="lg:col-span-7">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                        >
+                        <div>
                             <Tabs defaultValue="merch" className="w-full">
                                 <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent border-b border-border mb-8 rounded-none gap-8">
                                     <TabsTrigger
@@ -171,7 +164,7 @@ export default function Support() {
                                     </TabsContent>
                                 </div>
                             </Tabs>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>

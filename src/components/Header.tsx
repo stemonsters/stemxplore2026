@@ -3,9 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Atom, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 
 export default function Header() {
@@ -36,7 +35,7 @@ export default function Header() {
                 : "bg-transparent border-transparent"
                 }`}
         >
-            <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+            <div className="w-full lg:max-w-[80vw] mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
                     <Image src="/images/stemonsters-logo.png" alt="STEMonsters Logo" width={180} height={50} className="h-12 w-auto" />
@@ -53,9 +52,8 @@ export default function Header() {
                             {link.name}
                         </Link>
                     ))}
-                    <ModeToggle />
-                    <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                        Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                        <a href="#register">Register Now</a>
                     </Button>
                 </nav>
 
@@ -88,12 +86,8 @@ export default function Header() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <div className="flex items-center justify-between">
-                                <span className="text-sm font-mono text-muted-foreground">Theme</span>
-                                <ModeToggle />
-                            </div>
-                            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none">
-                                Register Now
+                            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none">
+                                <a href="#register" onClick={() => setIsMobileMenuOpen(false)}>Register Now</a>
                             </Button>
                         </nav>
                     </motion.div>
