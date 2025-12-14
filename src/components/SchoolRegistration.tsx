@@ -6,7 +6,7 @@ import { ArrowRight, School } from "lucide-react";
 
 export default function SchoolRegistration() {
     return (
-        <section className="py-16 bg-muted/30 border-y border-border relative overflow-hidden">
+        <section className="py-16 bg-background border-y border-border relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
                     <div

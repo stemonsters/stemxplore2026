@@ -5,7 +5,6 @@ import EventBlocks from "@/components/EventBlocks";
 import FeaturedEvent from "@/components/FeaturedEvent";
 
 import StudentContestsDetailed from "@/components/StudentContestsDetailed";
-import JudgesMentors from "@/components/JudgesMentors";
 import Schedule from "@/components/Schedule";
 import About from "@/components/About";
 import SchoolRegistration from "@/components/SchoolRegistration";
@@ -24,7 +23,7 @@ export default function Home() {
 
       <FeaturedEvent />
       <StudentContestsDetailed />
-      <JudgesMentors />
+
       <Schedule />
       <About />
       <EventPartners />

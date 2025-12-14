@@ -6,7 +6,7 @@ export default function EventPartners() {
     const partners = Array.from({ length: 10 });
 
     return (
-        <div id="partners" className="w-full py-20 bg-background border-b border-border overflow-hidden scroll-mt-16">
+        <div id="partners" className="w-full py-20 bg-muted/50 border-b border-border overflow-hidden scroll-mt-16">
             <div className="container mx-auto px-4 mb-10">
                 <h2 className="text-xl md:text-3xl font-bold tracking-tight text-center">
                     Our Event Partners

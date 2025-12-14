@@ -110,7 +110,7 @@ export default function StudentRegistration() {
                                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                                     <span className="text-primary font-bold text-xs">3</span>
                                 </div>
-                                <span>Get ready to innovate on Feb 28 & Mar 8!</span>
+                                <span>Get ready to innovate on Mar 8 & Mar 15!</span>
                             </div>
                         </div>
                     </div>

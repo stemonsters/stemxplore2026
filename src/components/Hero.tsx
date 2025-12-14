@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 
-import { Calendar, ArrowRight, ChevronRight } from "lucide-react";
+import { Calendar, ArrowRight, ChevronRight, Atom, Microscope, Code, Globe, Rocket } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-12 gap-12 items-center">
                     <div
-                        className="lg:col-span-8"
+                        className="lg:col-span-7"
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6 md:mb-8">
                             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
@@ -54,33 +54,49 @@ export default function Hero() {
                         <div className="flex items-center gap-8 text-sm font-mono text-muted-foreground border-t border-border pt-6">
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4 text-accent" />
-                                <span>28.02.2026</span>
+                                <span>08.03.2026</span>
                             </div>
                             <div className="w-px h-4 bg-border" />
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4 text-accent" />
-                                <span>08.03.2026</span>
+                                <span>15.03.2026</span>
                             </div>
                         </div>
                     </div>
 
-                    <div
-                        className="lg:col-span-4 hidden lg:block"
-                    >
-                        <div className="relative aspect-square border border-border bg-card/50 p-2">
-                            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary -mt-1 -ml-1" />
-                            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary -mt-1 -mr-1" />
-                            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary -mb-1 -ml-1" />
-                            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary -mb-1 -mr-1" />
+                    <div className="lg:col-span-5 hidden lg:block relative">
+                        <div className="relative aspect-square flex items-center justify-center scale-125">
+                            {/* Central Circle */}
+                            <div className="absolute w-[60%] h-[60%] border border-primary/20 rounded-full flex items-center justify-center animate-[spin_60s_linear_infinite]">
+                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
+                                    <Atom className="w-6 h-6 text-primary" />
+                                </div>
+                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
+                                    <Microscope className="w-6 h-6 text-accent" />
+                                </div>
+                            </div>
 
-                            <div className="w-full h-full relative overflow-hidden bg-muted/20">
-                                <Image
-                                    src="/images/hero-illustration-v3.png"
-                                    alt="STEMXplore 2026 Hero Illustration"
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                />
+                            {/* Outer Circle */}
+                            <div className="absolute w-[80%] h-[80%] border border-border rounded-full flex items-center justify-center animate-[spin_40s_linear_infinite_reverse]">
+                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
+                                    <Code className="w-6 h-6 text-foreground" />
+                                </div>
+                                <div className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
+                                    <Globe className="w-6 h-6 text-muted-foreground" />
+                                </div>
+                            </div>
+
+                            {/* Center Element */}
+                            <div className="relative z-10 w-80 h-80 flex items-center justify-center">
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/stemxplore-hero-logo.png"
+                                        alt="STEMXplore 2026 Logo"
+                                        fill
+                                        className="object-contain"
+                                        priority
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import { Heart, Gift, ShoppingBag, Handshake, ArrowRight, CheckCircle2 } from "l
 
 export default function Support() {
     return (
-        <section id="support" className="py-24 bg-background relative overflow-hidden border-b border-border scroll-mt-16">
+        <section id="support" className="py-24 bg-muted/50 relative overflow-hidden border-b border-border scroll-mt-16">
             {/* Grid Background */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,var(--background))]" />

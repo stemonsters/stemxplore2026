@@ -1,7 +1,9 @@
 "use client";
 
 
-import { Laptop, Users, Trophy, Globe } from "lucide-react";
+import { Laptop, Users, Trophy, Globe, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function StatItem({ icon: Icon, value, label, prefix = "", suffix = "" }: { icon: any, value: number, label: string, prefix?: string, suffix?: string }) {
     return (
@@ -20,14 +22,14 @@ function StatItem({ icon: Icon, value, label, prefix = "", suffix = "" }: { icon
 
 export default function About() {
     return (
-        <section id="about" className="py-24 bg-muted/10 border-b border-border scroll-mt-16">
+        <section id="about" className="py-24 bg-background border-b border-border scroll-mt-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-12 gap-12 mb-16">
                     <div className="md:col-span-4">
                         <h2 className="text-4xl font-bold font-mono mb-6 tracking-tighter">
                             About the Event
                         </h2>
-                        <div className="w-12 h-12 border-t-4 border-l-4 border-primary mb-6" />
+                        <div className="w-12 h-12 border-t-4 border-l-4 border-primary mb-8" />
                     </div>
 
                     <div className="md:col-span-8 space-y-8">
@@ -38,6 +40,8 @@ export default function About() {
                                 <strong className="font-bold text-primary">STEMXplore 2026</strong> celebrates India’s National Science Day through discovery, creativity, and innovation.
                             </p>
                         </div>
+
+
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div
@@ -58,15 +62,25 @@ export default function About() {
                                 </p>
                             </div>
                         </div>
+
+                        <div>
+                            <Button asChild variant="link" className="p-0 h-auto text-primary hover:text-primary/80 font-semibold text-lg group">
+                                <Link href="/about" className="flex items-center">
+                                    Read Our Full Story
+                                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
-                    <StatItem icon={Laptop} value={10} label="Cities and Schools" suffix="+" />
-                    <StatItem icon={Users} value={1000} label="Participants" suffix="+" />
-                    <StatItem icon={Globe} value={2000} label="Community" suffix="+" />
-                    <StatItem icon={Trophy} value={30000} label="Worth Prizes" prefix="₹" />
-                </div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
+                <StatItem icon={Laptop} value={10} label="Cities and Schools" suffix="+" />
+                <StatItem icon={Users} value={1000} label="Participants" suffix="+" />
+                <StatItem icon={Globe} value={2000} label="Community" suffix="+" />
+                <StatItem icon={Trophy} value={30000} label="Worth Prizes" prefix="₹" />
             </div>
         </section>
     );

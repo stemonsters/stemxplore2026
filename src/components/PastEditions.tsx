@@ -7,7 +7,7 @@ export default function PastEditions() {
     const years = [2025, 2024, 2023, 2022];
 
     return (
-        <section className="py-20 bg-background border-t border-b border-border">
+        <section className="py-20 bg-muted/50 border-t border-b border-border">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-2 md:gap-0">
                     <h2 className="text-3xl font-bold">Past Editions</h2>

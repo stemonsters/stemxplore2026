@@ -24,7 +24,7 @@ export default function StudentContestsHighlight() {
     ];
 
     return (
-        <section id="contests" className="py-20 border-y border-border bg-background scroll-mt-16">
+        <section id="contests" className="py-20 border-y border-border bg-muted/50 scroll-mt-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
                     <div className="md:col-span-4">

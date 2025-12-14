@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const scheduleData = [
     {
         day: "Day 1",
-        date: "Feb 28, 2026",
+        date: "Mar 8, 2026",
         events: [
             {
                 time: "07:00 PM - 08:00 PM",
@@ -20,30 +20,30 @@ const scheduleData = [
     },
     {
         day: "Day 2",
-        date: "Mar 8, 2026",
+        date: "Mar 15, 2026",
         events: [
             {
-                time: "10:00 AM - 11:00 AM",
+                time: "10:00 AM - 10:15 AM IST",
                 title: "Welcome Address",
                 description: "Welcome address by Dr. Sonali Dasgupta, setting the stage for an inspiring day of innovation.",
                 type: "Keynote",
             },
             {
-                time: "11:30 AM - 01:00 PM",
+                time: "10:30 AM - 11:30 AM IST",
                 title: "Junior Hackathon - Scratch Finals",
                 description: "Young coders present their Scratch projects with video explanations of their code.",
                 type: "Competition",
             },
             {
-                time: "02:00 PM - 03:30 PM",
+                time: "11:45 AM - 12:30 PM IST",
                 title: "Let's Talk STEM - Finals",
                 description: "7 finalists present on the topic 'Science is not necessary when we have AI'. Judged live on stage.",
                 type: "Competition",
             },
             {
-                time: "03:45 PM - 05:00 PM",
+                time: "12:45 PM - 01:30 PM IST",
                 title: "Story Behind My Tech - Finals",
-                description: "5 finalists showcase their 'Water Sustainability' solutions: scientific models, Arduino projects, and apps.",
+                description: "Finalists showcase their diverse tech solutions including scientific models, Arduino projects, and apps.",
                 type: "Competition",
             },
         ],

@@ -36,10 +36,10 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-4 md:mb-6 text-accent">Quick Links</h3>
                         <ul className="space-y-2 md:space-y-3 font-mono text-sm">
-                            <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Gallery</Link></li>
-                            <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Support Us</Link></li>
-                            <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Webinar Registration</Link></li>
+                            <li><Link href="#contest-details" className="text-muted-foreground hover:text-primary transition-colors">Contests</Link></li>
+                            <li><Link href="#schedule" className="text-muted-foreground hover:text-primary transition-colors">Schedule</Link></li>
+                            <li><Link href="#support" className="text-muted-foreground hover:text-primary transition-colors">Support</Link></li>
+                            <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
                         </ul>
                     </div>
 
@@ -47,13 +47,13 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-4 md:mb-6 text-accent">Connect</h3>
                         <div className="flex gap-4">
-                            <Link href="#" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
+                            <Link href="https://www.facebook.com/STEMonstersClub" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
                                 <Facebook className="w-5 h-5" />
                             </Link>
-                            <Link href="#" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
+                            <Link href="https://www.linkedin.com/company/stemonsters/" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
                                 <Linkedin className="w-5 h-5" />
                             </Link>
-                            <Link href="#" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
+                            <Link href="https://www.instagram.com/STEMonstersClub/" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
                                 <Instagram className="w-5 h-5" />
                             </Link>
                         </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,6 +11,7 @@ import Image from "next/image";
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,12 +22,10 @@ export default function Header() {
     }, []);
 
     const navLinks = [
-        { name: "Contests", href: "#contests" },
-        { name: "Events", href: "#events" },
+        { name: "Contests", href: "#contest-details" },
         { name: "Schedule", href: "#schedule" },
-        { name: "About", href: "#about" },
-        { name: "Partners", href: "#partners" },
         { name: "Support", href: "#support" },
+        { name: "About", href: "/about" },
     ];
 
     return (
@@ -52,9 +52,16 @@ export default function Header() {
                             {link.name}
                         </Link>
                     ))}
-                    <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                        <a href="#register">Register Now</a>
-                    </Button>
+                    <div className="flex items-center gap-2">
+                        {pathname !== "/webinar-registration" && (
+                            <Button asChild variant="outline" className="rounded-none border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                                <Link href="/webinar-registration">Webinar Registration</Link>
+                            </Button>
+                        )}
+                        <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                            <a href="#register">Contest Registration</a>
+                        </Button>
+                    </div>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -86,8 +93,13 @@ export default function Header() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none">
-                                <a href="#register" onClick={() => setIsMobileMenuOpen(false)}>Register Now</a>
+                            {pathname !== "/webinar-registration" && (
+                                <Button asChild variant="outline" className="w-full rounded-none border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+                                    <Link href="/webinar-registration" onClick={() => setIsMobileMenuOpen(false)}>Webinar Registration</Link>
+                                </Button>
+                            )}
+                            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                                <a href="#register" onClick={() => setIsMobileMenuOpen(false)}>Contest Registration</a>
                             </Button>
                         </nav>
                     </motion.div>
