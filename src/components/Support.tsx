@@ -15,13 +15,11 @@ export default function Support() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,var(--background))]" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="grid lg:grid-cols-12 gap-12 items-start">
+                <div className="grid lg:grid-cols-12 gap-12 items-stretch">
                     {/* Left Side: Why Support */}
-                    <div className="lg:col-span-5">
-                        <div
-                            className="sticky top-24"
-                        >
-                            <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6">
+                    <div className="lg:col-span-5 flex">
+                        <div className="flex flex-col justify-center">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6 w-fit">
                                 <Heart className="w-3 h-3" />
                                 <span>Support the Mission</span>
                             </div>
@@ -29,20 +27,9 @@ export default function Support() {
                                 Empower the <br />
                                 <span className="text-primary">Next Generation</span>
                             </h2>
-                            <p className="text-lg text-muted-foreground leading-relaxed mb-8 border-l-2 border-primary/50 pl-6">
-                                Your contribution directly fuels innovation. By supporting STEMXplore, you bridge the gap between education and industry, providing students with the resources they need to build a better future.
+                            <p className="text-lg text-muted-foreground leading-relaxed border-l-2 border-primary/50 pl-6">
+                                STEMXplore is free for all student participants. In order to encourage students and maximize participation, we aim to maintain this philosophy. All funds generated through sponsorship, gifting partnerships, or merchandise sales will go exclusively toward organizing the event.
                             </p>
-
-                            <div className="grid grid-cols-2 gap-4 mb-8">
-                                <div className="p-4 bg-muted/50 border border-border">
-                                    <div className="text-3xl font-bold text-primary mb-1">100%</div>
-                                    <div className="text-xs text-muted-foreground uppercase tracking-wider">Impact on Students</div>
-                                </div>
-                                <div className="p-4 bg-muted/50 border border-border">
-                                    <div className="text-3xl font-bold text-primary mb-1">50+</div>
-                                    <div className="text-xs text-muted-foreground uppercase tracking-wider">Partner Schools</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -77,16 +64,15 @@ export default function Support() {
                                             <Handshake className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h3 className="text-2xl font-bold mb-2">Become a Corporate Sponsor</h3>
+                                            <h3 className="text-2xl font-bold mb-2">Become a Sponsor</h3>
                                             <p className="text-muted-foreground">
-                                                Gain visibility among thousands of students, educators, and tech enthusiasts.
-                                                Sponsorship tiers include logo placement, speaking opportunities, and direct access to top talent.
+                                                As a sponsor, your brand will be at the forefront of a transformative event connecting students, educators, and STEM leaders. Gain visibility among a highly engaged audience and showcase your commitment to advancing STEM education.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="grid sm:grid-cols-2 gap-4">
-                                        {["Brand visibility on all materials", "Speaking slots in webinars", "Virtual expo booth space", "Access to resume database"].map((item, i) => (
+                                        {["Logo placement on event materials and promotions", "Dedicated mentions during the event sessions", "Recognition in media outreach and post-event reports", "Connect with leading schools across India"].map((item, i) => (
                                             <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
                                                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                                                 {item}
@@ -95,10 +81,12 @@ export default function Support() {
                                     </div>
 
                                     <div className="pt-6">
-                                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                                            Learn More
-                                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </Button>
+                                        <a href="https://api.whatsapp.com/send?phone=919741165171&text=Become%20A%20Sponsor" target="_blank" rel="noopener noreferrer">
+                                            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                                                Contact Us
+                                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </Button>
+                                        </a>
                                     </div>
                                 </TabsContent>
 
@@ -110,14 +98,13 @@ export default function Support() {
                                         <div>
                                             <h3 className="text-2xl font-bold mb-2">Become a Gifting Partner</h3>
                                             <p className="text-muted-foreground">
-                                                Help us reward excellence! We are looking for partners to provide prizes for our hackathons
-                                                and contests. This could be hardware, software licenses, educational kits, or vouchers.
+                                                Partner with us to provide gifts or prizes for participants. Whether it is educational tools, student accessories, children's products or vouchers, your contribution will directly inspire participants to continue their STEM journey.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="grid sm:grid-cols-2 gap-4">
-                                        {["Product placement in showcases", "Social media shoutouts", "Direct engagement with winners", "Tax deduction benefits"].map((item, i) => (
+                                        {["Your logo featured on gifting materials", "Acknowledgement in the event's digital communications", "Direct engagement with participants", "Inspire students to continue their STEM journey"].map((item, i) => (
                                             <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
                                                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                                                 {item}
@@ -126,10 +113,12 @@ export default function Support() {
                                     </div>
 
                                     <div className="pt-6">
-                                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                                            Learn More
-                                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </Button>
+                                        <a href="https://api.whatsapp.com/send?phone=919741165171&text=Become%20A%20Gifting%20Partner" target="_blank" rel="noopener noreferrer">
+                                            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                                                Contact Us
+                                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </Button>
+                                        </a>
                                     </div>
                                 </TabsContent>
 
@@ -141,14 +130,13 @@ export default function Support() {
                                         <div>
                                             <h3 className="text-2xl font-bold mb-2">Purchase Event Merchandise</h3>
                                             <p className="text-muted-foreground">
-                                                Show your support by purchasing official STEMXplore 2026 merchandise.
-                                                100% of the proceeds go towards funding student scholarships and providing resources for underfunded schools.
+                                                Support STEMXplore 2026 by purchasing our specially curated merchandise. Every purchase directly supports the organization of this event, ensuring its success and accessibility to a wider audience.
                                             </p>
                                         </div>
                                     </div>
 
                                     <div className="grid sm:grid-cols-2 gap-4">
-                                        {["Limited edition t-shirts & hoodies", "Stickers, badges & accessories", "Global shipping available", "Support a good cause"].map((item, i) => (
+                                        {["Limited edition t-shirts & hoodies", "Stickers, badges & accessories", "Every purchase supports the event", "Help shape the future of STEM education"].map((item, i) => (
                                             <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
                                                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                                                 {item}
@@ -157,10 +145,12 @@ export default function Support() {
                                     </div>
 
                                     <div className="pt-6">
-                                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                                            Learn More
-                                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </Button>
+                                        <a href="https://stemonsters.com/shop/" target="_blank" rel="noopener noreferrer">
+                                            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none group w-full sm:w-auto border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                                                Shop Now
+                                                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </Button>
+                                        </a>
                                     </div>
                                 </TabsContent>
                             </Tabs>
@@ -168,11 +158,27 @@ export default function Support() {
                     </div>
                 </div>
 
+                {/* Three Benefit Cards - Full Width */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+                    <div className="p-4 bg-muted/50 border border-border">
+                        <div className="text-lg font-bold text-primary mb-1">Enhance Brand Purpose</div>
+                        <div className="text-sm text-muted-foreground">Align your brand with a meaningful cause: empowering the next generation through STEM education.</div>
+                    </div>
+                    <div className="p-4 bg-muted/50 border border-border">
+                        <div className="text-lg font-bold text-primary mb-1">Reach 2000+ Community</div>
+                        <div className="text-sm text-muted-foreground">Get your brand directly to the inbox of our actively engaged community of over 2000 parents across the country.</div>
+                    </div>
+                    <div className="p-4 bg-muted/50 border border-border">
+                        <div className="text-lg font-bold text-primary mb-1">Create Brand Awareness</div>
+                        <div className="text-sm text-muted-foreground">Gain visibility and recognition by showcasing your brand to a diverse audience of students, educators, and school leaders.</div>
+                    </div>
+                </div>
+
                 {/* Event Partners Carousel */}
                 <div className="mt-20">
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                            Our Event Partners
+                            Past Partners
                         </h3>
                     </div>
 
