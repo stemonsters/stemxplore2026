@@ -64,13 +64,39 @@ export default function Header() {
                     </div>
                 </nav>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-foreground p-2 border border-border"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
-                </button>
+                {/* Mobile Menu Button with Register Bubble */}
+                <div className="md:hidden flex items-center gap-2 relative">
+                    {/* Register Now Bubble - shows when not scrolled */}
+                    <AnimatePresence>
+                        {!isMobileMenuOpen && (
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="absolute right-full mr-3 whitespace-nowrap"
+                            >
+                                <div className="relative">
+                                    <a
+                                        href="/#register"
+                                        className="text-xs font-medium text-primary border border-primary/30 bg-primary/5 px-2.5 py-1 rounded-md hover:bg-primary/10 transition-colors"
+                                    >
+                                        Register Now
+                                    </a>
+                                    {/* Subtle pointer */}
+                                    <div className="absolute top-1/2 -translate-y-1/2 -right-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-primary/30"></div>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+
+                    <button
+                        className="text-foreground p-2 border border-border"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    >
+                        {isMobileMenuOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Navigation */}
