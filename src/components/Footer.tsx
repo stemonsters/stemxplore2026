@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12 border-b border-border pb-8 md:pb-12">
                     {/* Brand & Contact */}
                     <div className="col-span-1 md:col-span-2">
-                        <Link href="/" className="flex items-center mb-4 md:mb-6">
+                        <Link href="https://stemonsters.com" target="_blank" rel="noopener noreferrer" className="flex items-center mb-4 md:mb-6">
                             <Image src="/images/stemonsters-logo.png" alt="STEMonsters Logo" width={200} height={60} className="h-12 md:h-16 w-auto" />
                         </Link>
                         <div className="space-y-3 md:space-y-4 text-muted-foreground font-mono text-sm">
@@ -40,6 +40,7 @@ export default function Footer() {
                             <li><Link href="#schedule" className="text-muted-foreground hover:text-primary transition-colors">Schedule</Link></li>
                             <li><Link href="#support" className="text-muted-foreground hover:text-primary transition-colors">Support</Link></li>
                             <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
+                            <li><Link href="https://stemonsters.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">STEMonsters</Link></li>
                         </ul>
                     </div>
 

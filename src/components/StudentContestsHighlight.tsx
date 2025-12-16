@@ -2,34 +2,31 @@
 
 import { Button } from "@/components/ui/button";
 
-import { Trophy, Gift, Zap, ArrowRight } from "lucide-react";
+import { Trophy, Globe, Ticket, ArrowRight } from "lucide-react";
 
 export default function StudentContestsHighlight() {
     const features = [
         {
             icon: <Trophy className="w-6 h-6 text-primary" />,
             text: "Grand Prizes",
-            subtext: "To be won by finalists"
         },
         {
-            icon: <Gift className="w-6 h-6 text-accent" />,
-            text: "Rewards",
-            subtext: "Vouchers & e-certificates"
+            icon: <Globe className="w-6 h-6 text-accent" />,
+            text: "Global Stage",
         },
         {
-            icon: <Zap className="w-6 h-6 text-foreground" />,
-            text: "No Cost",
-            subtext: "Free participation"
+            icon: <Ticket className="w-6 h-6 text-foreground" />,
+            text: "Free Event",
         },
     ];
 
     return (
-        <section id="contests" className="py-20 border-y border-border bg-muted/50 scroll-mt-16">
+        <section id="contests" className="py-12 border-y border-border bg-muted/50 scroll-mt-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
                     <div className="md:col-span-4">
                         <div>
-                            <h2 className="text-3xl font-bold mb-4 md:mb-6 tracking-tight">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 tracking-tight">
                                 Student Contests
                                 <span className="block text-primary text-lg mt-2 font-normal">
                                     Register Now
@@ -39,7 +36,7 @@ export default function StudentContestsHighlight() {
                                 Participate in our flagship challenges. Showcase your innovation. Win big.
                             </p>
                             {/* Desktop button */}
-                            <Button asChild className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 h-auto rounded-none text-base group border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                            <Button asChild size="lg" className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
                                 <a href="#contest-details">
                                     Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>
@@ -57,13 +54,12 @@ export default function StudentContestsHighlight() {
                                     <div className="mb-2 md:mb-4 p-2 md:p-3 bg-muted w-fit group-hover:bg-primary/10 transition-colors">
                                         {feature.icon}
                                     </div>
-                                    <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2">{feature.text}</h3>
-                                    <p className="text-xs md:text-sm text-muted-foreground">{feature.subtext}</p>
+                                    <h3 className="text-sm md:text-lg font-bold">{feature.text}</h3>
                                 </div>
                             ))}
                         </div>
                         {/* Mobile button - under cards */}
-                        <Button asChild className="md:hidden w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 h-auto rounded-none text-base group border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
+                        <Button asChild size="lg" className="md:hidden w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
                             <a href="#contest-details">
                                 Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </a>

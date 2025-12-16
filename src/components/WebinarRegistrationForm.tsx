@@ -24,19 +24,33 @@ export default function WebinarRegistrationForm() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        try {
+            const formDataObj = new FormData();
+            Object.entries(formData).forEach(([key, value]) => {
+                formDataObj.append(key, value.toString());
+            });
 
-        console.log("Form submitted:", formData);
-        setShowSuccessModal(true);
-        setIsSubmitting(false);
-        setFormData({
-            fullName: "",
-            email: "",
-            phone: "",
-            isParent: false,
-            organization: "",
-        });
+            await fetch("https://script.google.com/macros/s/AKfycbzVwmOaJ3cE9KQ9Z2nBFuK7aB5kXa2AfAZ9c5k0XMLHVc8644OJ7f1pJ6DJ8h-yvuW1LQ/exec", {
+                method: "POST",
+                mode: "no-cors",
+                body: formDataObj,
+            });
+
+            console.log("Form submitted:", formData);
+            setShowSuccessModal(true);
+            setFormData({
+                fullName: "",
+                email: "",
+                phone: "",
+                isParent: false,
+                organization: "",
+            });
+        } catch (error) {
+            console.error("Error submitting webinar registration:", error);
+            alert("Something went wrong. Please try again later.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (field: string, value: string | boolean) => {
@@ -59,13 +73,12 @@ export default function WebinarRegistrationForm() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-foreground leading-tight">
-                            Can AI Improve <br />
-                            <span className="text-primary">Cognitive Skills</span> Without <br />
-                            Emotional Skills?
+                            Learning for Careers/ <br />
+                            <span className="text-primary">Life in 2030</span>
                         </h2>
 
                         <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                            Can artificial intelligence enhance our cognitive abilities while neglecting emotional intelligence? Join our expert panelists as they explore this critical question shaping the future of education and human development.
+                            How do we prepare ourselves and the next generation for careers that don't exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
                         </p>
 
                         <div className="space-y-6">
@@ -74,8 +87,8 @@ export default function WebinarRegistrationForm() {
                                     <Star className="w-5 h-5 text-primary" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-foreground mb-1">Expert Panel Discussion</h4>
-                                    <p className="text-sm text-muted-foreground">Hear diverse perspectives from industry leaders and educators.</p>
+                                    <h4 className="font-bold text-foreground mb-1">Upskilling</h4>
+                                    <p className="text-sm text-muted-foreground">Learn how to continuously adapt and grow your skillset for the future.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -83,8 +96,8 @@ export default function WebinarRegistrationForm() {
                                     <Users className="w-5 h-5 text-primary" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-foreground mb-1">Cognitive vs Emotional AI</h4>
-                                    <p className="text-sm text-muted-foreground">Understanding the balance between IQ and EQ in the age of AI.</p>
+                                    <h4 className="font-bold text-foreground mb-1">2030 Careers</h4>
+                                    <p className="text-sm text-muted-foreground">Discover emerging career paths and industries of the future.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -92,8 +105,8 @@ export default function WebinarRegistrationForm() {
                                     <Sparkles className="w-5 h-5 text-primary" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-foreground mb-1">Future of Education</h4>
-                                    <p className="text-sm text-muted-foreground">How educators and parents can prepare for an AI-driven future.</p>
+                                    <h4 className="font-bold text-foreground mb-1">Lifelong Learning</h4>
+                                    <p className="text-sm text-muted-foreground">Strategies for continuous education in an ever-evolving world.</p>
                                 </div>
                             </div>
                         </div>

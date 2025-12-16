@@ -1,13 +1,41 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
-import { Calendar, ArrowRight, ChevronRight, Atom, Microscope, Code, Globe, Rocket } from "lucide-react";
+import { Calendar, ArrowRight, ChevronRight, Laptop, Users, Trophy, Globe } from "lucide-react";
 import Image from "next/image";
+
+function CountUp({ end, prefix = "", suffix = "", duration = 2000 }: { end: number; prefix?: string; suffix?: string; duration?: number }) {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        let startTime: number;
+        let animationFrame: number;
+
+        const animate = (currentTime: number) => {
+            if (!startTime) startTime = currentTime;
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            setCount(Math.floor(easeOutQuart * end));
+
+            if (progress < 1) {
+                animationFrame = requestAnimationFrame(animate);
+            }
+        };
+
+        animationFrame = requestAnimationFrame(animate);
+        return () => cancelAnimationFrame(animationFrame);
+    }, [end, duration]);
+
+    return <>{prefix}{count.toLocaleString()}{suffix}</>;
+}
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-background">
+        <section className="relative min-h-screen flex items-center justify-center pt-0 overflow-hidden bg-background">
             {/* Grid Background */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,var(--background))]" />
@@ -19,12 +47,10 @@ export default function Hero() {
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6 md:mb-8">
                             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                            National Science Day 2026
+                            FIFTH EDITION
                         </div>
 
-                        <div className="text-lg md:text-2xl font-bold text-primary mb-2 tracking-wide">
-                            STEMXplore 2026
-                        </div>
+
                         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
                             NATIONAL SCIENCE <br />
                             <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow">
@@ -34,8 +60,6 @@ export default function Hero() {
 
                         <p className="text-base sm:text-lg md:text-2xl text-muted-foreground max-w-2xl mb-8 font-light border-l-2 border-accent pl-4 md:pl-6">
                             A 2-day mega virtual event to celebrate science and hands-on learning.
-                            <br />
-                            <span className="text-sm font-medium mt-2 block text-primary/80">Initializing STEMXplore 2026</span>
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 md:mb-12">
@@ -51,51 +75,78 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div className="flex items-center gap-8 text-sm font-mono text-muted-foreground border-t border-border pt-6">
-                            <div className="flex items-center gap-2">
-                                <Calendar className="w-4 h-4 text-accent" />
-                                <span>08.03.2026</span>
+                        <div className="flex items-center gap-6 border-t border-border pt-6">
+                            <div className="flex items-center gap-4 group">
+                                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 flex flex-col items-center justify-center text-primary-foreground shadow-lg">
+                                    <span className="text-2xl font-bold leading-none">08</span>
+                                    <span className="text-xs uppercase tracking-wide">Mar</span>
+                                </div>
+                                <div>
+                                    <div className="text-base text-primary font-bold uppercase tracking-wider">Day 1</div>
+                                    <div className="text-sm text-muted-foreground">Saturday, 2026</div>
+                                </div>
                             </div>
-                            <div className="w-px h-4 bg-border" />
-                            <div className="flex items-center gap-2">
-                                <Calendar className="w-4 h-4 text-accent" />
-                                <span>15.03.2026</span>
+
+                            <div className="flex items-center gap-4 group">
+                                <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/70 flex flex-col items-center justify-center text-accent-foreground shadow-lg">
+                                    <span className="text-2xl font-bold leading-none">15</span>
+                                    <span className="text-xs uppercase tracking-wide">Mar</span>
+                                </div>
+                                <div>
+                                    <div className="text-base text-accent font-bold uppercase tracking-wider">Day 2</div>
+                                    <div className="text-sm text-muted-foreground">Saturday, 2026</div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="lg:col-span-5 hidden lg:block relative">
-                        <div className="relative aspect-square flex items-center justify-center scale-125">
-                            {/* Central Circle */}
-                            <div className="absolute w-[60%] h-[60%] border border-primary/20 rounded-full flex items-center justify-center animate-[spin_60s_linear_infinite]">
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
-                                    <Atom className="w-6 h-6 text-primary" />
+                        <div className="grid grid-cols-2 gap-6">
+                            {/* Column 1 - Staggered Down */}
+                            <div className="space-y-6 pt-12">
+                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="relative z-10">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
+                                            <Laptop className="w-7 h-7 text-primary" />
+                                        </div>
+                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={10} suffix="+" /></div>
+                                        <div className="text-sm text-muted-foreground font-medium">Cities and Schools</div>
+                                    </div>
                                 </div>
-                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
-                                    <Microscope className="w-6 h-6 text-accent" />
+                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="relative z-10">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
+                                            <Globe className="w-7 h-7 text-accent" />
+                                        </div>
+                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={2000} suffix="+" /></div>
+                                        <div className="text-sm text-muted-foreground font-medium">Community</div>
+                                    </div>
                                 </div>
                             </div>
 
-                            {/* Outer Circle */}
-                            <div className="absolute w-[80%] h-[80%] border border-border rounded-full flex items-center justify-center animate-[spin_40s_linear_infinite_reverse]">
-                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
-                                    <Code className="w-6 h-6 text-foreground" />
+                            {/* Column 2 - Normal Position */}
+                            <div className="space-y-6">
+                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="relative z-10">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
+                                            <Users className="w-7 h-7 text-accent" />
+                                        </div>
+                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={1000} suffix="+" /></div>
+                                        <div className="text-sm text-muted-foreground font-medium">Participants</div>
+                                    </div>
                                 </div>
-                                <div className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 p-3 bg-background border border-border rounded-full shadow-sm">
-                                    <Globe className="w-6 h-6 text-muted-foreground" />
-                                </div>
-                            </div>
-
-                            {/* Center Element */}
-                            <div className="relative z-10 w-80 h-80 flex items-center justify-center">
-                                <div className="relative w-full h-full">
-                                    <Image
-                                        src="/images/stemxplore-hero-logo.png"
-                                        alt="STEMXplore 2026 Logo"
-                                        fill
-                                        className="object-contain"
-                                        priority
-                                    />
+                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="relative z-10">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
+                                            <Trophy className="w-7 h-7 text-primary" />
+                                        </div>
+                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={30000} prefix="₹" /></div>
+                                        <div className="text-sm text-muted-foreground font-medium">Worth Prizes</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,3 +156,4 @@ export default function Hero() {
         </section>
     );
 }
+

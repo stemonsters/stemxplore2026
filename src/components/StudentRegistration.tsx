@@ -38,7 +38,7 @@ export default function StudentRegistration() {
                 formDataObj.append(key, value);
             });
 
-            await fetch("https://script.google.com/macros/s/AKfycbwhMgb5faffDaZUiQ_sLiUMhpyEQhYjplowJNJluUpYDZ9w6G0NSeF4ryO14BwbEwnk/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbwEyYH-tewLZpl8XodSWHvgjJt2oM-Q9kATKH-My_YyiciIcpFaUcbOBGHSDqjP9LP9dA/exec", {
                 method: "POST",
                 mode: "no-cors",
                 body: formDataObj,

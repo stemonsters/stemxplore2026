@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, School } from "lucide-react";
-
+import { motion } from "framer-motion";
 
 export default function SchoolRegistration() {
+    const schools = Array.from({ length: 10 });
     return (
         <section className="py-16 bg-background border-y border-border relative overflow-hidden">
             <div className="container mx-auto px-4">
@@ -18,7 +19,7 @@ export default function SchoolRegistration() {
                             </div>
                             <span className="text-sm font-medium text-primary uppercase tracking-wider">For Institutions</span>
                         </div>
-                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-3">
+                        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3">
                             Are you a progressive school looking to participate?
                         </h2>
                         <p className="text-muted-foreground leading-relaxed max-w-2xl">
@@ -33,6 +34,51 @@ export default function SchoolRegistration() {
                             Know More
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Button>
+                    </div>
+                </div>
+
+                {/* Partner Schools Carousel */}
+                <div className="mt-20">
+                    <div className="mb-10 text-center">
+                        <h3 className="text-xl md:text-2xl font-bold tracking-tight">
+                            Our Partner Schools
+                        </h3>
+                    </div>
+
+                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent">
+                        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-background to-transparent" />
+                        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-background to-transparent" />
+
+                        <motion.div
+                            className="flex gap-8 items-center"
+                            animate={{ x: ["0%", "-50%"] }}
+                            transition={{
+                                duration: 20,
+                                ease: "linear",
+                                repeat: Infinity,
+                            }}
+                            style={{ width: "fit-content" }}
+                        >
+                            {/* First set of schools */}
+                            {schools.map((_, index) => (
+                                <div
+                                    key={`first-${index}`}
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                >
+                                    <span className="text-sm font-medium text-muted-foreground">School {index + 1}</span>
+                                </div>
+                            ))}
+
+                            {/* Second set of schools for seamless loop */}
+                            {schools.map((_, index) => (
+                                <div
+                                    key={`second-${index}`}
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                >
+                                    <span className="text-sm font-medium text-muted-foreground">School {index + 1}</span>
+                                </div>
+                            ))}
+                        </motion.div>
                     </div>
                 </div>
             </div>

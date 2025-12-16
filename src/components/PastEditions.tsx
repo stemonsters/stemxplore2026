@@ -10,7 +10,7 @@ export default function PastEditions() {
         <section className="py-20 bg-muted/50 border-t border-b border-border">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-2 md:gap-0">
-                    <h2 className="text-3xl font-bold">Past Editions</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Past Editions</h2>
                     <span className="text-sm text-muted-foreground">Our History</span>
                 </div>
 

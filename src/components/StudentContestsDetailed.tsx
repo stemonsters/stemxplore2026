@@ -17,9 +17,9 @@ export default function StudentContestsDetailed() {
                             <span>Contest Details</span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight text-foreground">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight text-foreground">
                             Showcase Your <br />
-                            <span className="text-primary-foreground bg-primary px-2">Innovation</span>
+                            <span className="text-primary">Innovation</span>
                         </h2>
 
                         <div className="space-y-6 text-lg text-muted-foreground mb-10">
@@ -65,22 +65,22 @@ export default function StudentContestsDetailed() {
                         className="w-full"
                     >
                         <Tabs defaultValue="junior-hackathon" className="w-full">
-                            <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent border-b border-border mb-8 rounded-none gap-2 md:gap-8">
+                            <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                 <TabsTrigger
                                     value="junior-hackathon"
-                                    className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0 text-xs md:text-base font-medium text-muted-foreground data-[state=active]:text-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Jr. Hackathon
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="lets-talk-stem"
-                                    className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0 text-xs md:text-base font-medium text-muted-foreground data-[state=active]:text-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Let&apos;s Talk STEM
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="tech-story"
-                                    className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0 text-xs md:text-base font-medium text-muted-foreground data-[state=active]:text-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Story Behind Tech
                                 </TabsTrigger>
@@ -88,17 +88,34 @@ export default function StudentContestsDetailed() {
 
                             <div className="border border-border bg-card/30 p-6 rounded-xl min-h-[400px]">
                                 <TabsContent value="junior-hackathon" className="mt-0 space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                                    <div className="flex justify-between items-start">
-                                        <div className="p-3 bg-primary/10 rounded-lg w-fit">
-                                            <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                            </svg>
-                                        </div>
-                                        <div className="px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium">
-                                            Grades 3-5
-                                        </div>
+                                    <div className="p-3 bg-primary/10 rounded-lg w-fit">
+                                        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
                                     </div>
                                     <h3 className="text-2xl font-bold">Junior Hackathon - Scratch</h3>
+                                    <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base text-muted-foreground">
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            </svg>
+                                            <span className="font-semibold">Grades 3-5</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            <span className="font-semibold">March 8, 2026</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            <span className="font-semibold">10:30 AM - 11:30 AM IST</span>
+                                        </div>
+                                    </div>
                                     <p className="text-muted-foreground">
                                         Theme: <strong>&quot;Reduce Reuse Recycle&quot;</strong>.
                                         Quiz + Hackathon format.
@@ -120,17 +137,34 @@ export default function StudentContestsDetailed() {
                                 </TabsContent>
 
                                 <TabsContent value="lets-talk-stem" className="mt-0 space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                                    <div className="flex justify-between items-start">
-                                        <div className="p-3 bg-primary/10 rounded-lg w-fit">
-                                            <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                                            </svg>
-                                        </div>
-                                        <div className="px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium">
-                                            Grades 7+
-                                        </div>
+                                    <div className="p-3 bg-primary/10 rounded-lg w-fit">
+                                        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                        </svg>
                                     </div>
                                     <h3 className="text-2xl font-bold">Let&apos;s Talk STEM</h3>
+                                    <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base text-muted-foreground">
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            </svg>
+                                            <span className="font-semibold">Grades 7+</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            <span className="font-semibold">March 8, 2026</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            <span className="font-semibold">11:45 AM - 12:30 PM IST</span>
+                                        </div>
+                                    </div>
                                     <p className="text-muted-foreground">
                                         Present your perspective on the thought-provoking topic: <strong>&quot;Science is not necessary when we have AI&quot;</strong>.
                                     </p>
@@ -143,25 +177,38 @@ export default function StudentContestsDetailed() {
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                                             Finals: 7 Finalists Present Live
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Judged Live on Mar 15, 2026
-                                        </div>
                                     </div>
                                 </TabsContent>
 
                                 <TabsContent value="tech-story" className="mt-0 space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                                    <div className="flex justify-between items-start">
-                                        <div className="p-3 bg-primary/10 rounded-lg w-fit">
-                                            <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                            </svg>
-                                        </div>
-                                        <div className="px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium">
-                                            Grades 7+
-                                        </div>
+                                    <div className="p-3 bg-primary/10 rounded-lg w-fit">
+                                        <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                                        </svg>
                                     </div>
                                     <h3 className="text-2xl font-bold">Story Behind my Tech</h3>
+                                    <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base text-muted-foreground">
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            </svg>
+                                            <span className="font-semibold">Grades 7+</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            <span className="font-semibold">March 15, 2026</span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            <span className="font-semibold">11:00 AM IST</span>
+                                        </div>
+                                    </div>
                                     <p className="text-muted-foreground">
                                         Innovative solutions for <strong>&quot;Water Sustainability&quot;</strong> or <strong>&quot;Energy Efficient Solutions&quot;</strong>.
                                     </p>

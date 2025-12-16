@@ -20,14 +20,25 @@ export default function FeaturedEvent() {
                     <div className="relative">
                         <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-accent/10 text-xs font-medium text-accent uppercase tracking-widest border border-accent/20">
                             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
-                            Launch Event
+                            KEYNOTE
                         </div>
 
                         <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight tracking-tight">
-                            CAN AI IMPROVE COGNITIVE SKILLS <br />
-                            <span className="text-primary">WITHOUT EMOTIONAL SKILLS?</span>
+                            LEARNING FOR CAREERS/ <br />
+                            <span className="text-primary">LIFE IN 2030</span>
                         </h2>
-                        <span className="block text-lg md:text-xl font-medium text-muted-foreground tracking-tight">Expert Panel Discussion • 7-8 PM IST • 3 Panelists</span>
+                        <div className="flex flex-wrap items-center gap-3 md:gap-4">
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                                <User className="w-4 h-4" />
+                                For Professionals & Educators
+                            </span>
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-sm font-medium border border-border">
+                                March 8, 2026
+                            </span>
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-sm font-medium border border-border">
+                                7:00 PM IST
+                            </span>
+                        </div>
 
                         {/* Decorative Element */}
                         <div className="absolute -z-10 -top-20 -left-20 opacity-[0.05] pointer-events-none">
@@ -39,21 +50,27 @@ export default function FeaturedEvent() {
                     <div className="flex flex-col justify-center relative">
                         <div className="pl-8 border-l-2 border-primary/20">
                             <p className="text-lg md:text-xl text-muted-foreground mb-12 font-light leading-relaxed">
-                                Can artificial intelligence enhance our cognitive abilities while neglecting emotional intelligence? Join our expert panelists as they explore this critical question shaping the future of education and human development.
+                                How do we prepare ourselves and the next generation for careers that don't exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
                             </p>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+                            <div className="flex flex-wrap items-center gap-6 mb-12">
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Brain className="w-6 h-6" />
                                     </div>
-                                    <span className="text-sm font-bold">AI Integration</span>
+                                    <span className="text-sm font-bold">Upskilling</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Cpu className="w-6 h-6" />
                                     </div>
-                                    <span className="text-sm font-bold">Future Skills</span>
+                                    <span className="text-sm font-bold">2030 Careers</span>
+                                </div>
+                                <div className="flex items-center gap-4 group">
+                                    <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
+                                        <Atom className="w-6 h-6" />
+                                    </div>
+                                    <span className="text-sm font-bold">Lifelong Learning</span>
                                 </div>
                             </div>
 
