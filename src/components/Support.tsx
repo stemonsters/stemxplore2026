@@ -1,13 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import Image from "next/image";
 import { Heart, Gift, ShoppingBag, Handshake, ArrowRight, CheckCircle2 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 
 export default function Support() {
-    const partners = Array.from({ length: 10 });
+    const partners = [
+        "Karakuri-logo.webp", "anydlogo.webp", "doughremom-logo.webp",
+        "earthandaroma-logo.png", "enlit-kids.webp", "kornayas-logo.png", "newsahoot-logo.jpg",
+        "ortus-logo.png", "peepaltree-logo.webp", "prithvimitra-logo.webp", "souldesibysj-logo.jpg",
+        "totsandmoms-logo.jpg", "wonderwhales-logo.jpeg", "cornucopia.webp"
+    ];
+    const [isPaused, setIsPaused] = useState(false);
     return (
         <section id="support" className="py-24 bg-muted/50 relative overflow-hidden border-b border-border scroll-mt-16">
             {/* Grid Background */}
@@ -195,40 +202,48 @@ export default function Support() {
                         </h3>
                     </div>
 
-                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent">
+                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent group">
                         <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-background to-transparent" />
                         <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-background to-transparent" />
 
-                        <motion.div
-                            className="flex gap-8 items-center"
-                            animate={{ x: ["0%", "-50%"] }}
-                            transition={{
-                                duration: 20,
-                                ease: "linear",
-                                repeat: Infinity,
-                            }}
+                        <div
+                            className="flex gap-8 items-center animate-scroll group-hover:[animation-play-state:paused]"
                             style={{ width: "fit-content" }}
                         >
                             {/* First set of partners */}
-                            {partners.map((_, index) => (
+                            {partners.map((partner, index) => (
                                 <div
                                     key={`first-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
                                 >
-                                    <span className="text-sm font-medium text-muted-foreground">Partner {index + 1}</span>
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={`/images/past-partners/${partner}`}
+                                            alt={`Partner ${index + 1}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
                             ))}
 
                             {/* Second set of partners for seamless loop */}
-                            {partners.map((_, index) => (
+                            {partners.map((partner, index) => (
                                 <div
                                     key={`second-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
                                 >
-                                    <span className="text-sm font-medium text-muted-foreground">Partner {index + 1}</span>
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={`/images/past-partners/${partner}`}
+                                            alt={`Partner ${index + 1}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
                             ))}
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>

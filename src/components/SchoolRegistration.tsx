@@ -1,11 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, School } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function SchoolRegistration() {
-    const schools = Array.from({ length: 10 });
+    const schools = Array(5).fill([
+        "kerela-public-school-logo.png",
+        "sparklingmindz-logo.png"
+    ]).flat();
+    const [isPaused, setIsPaused] = useState(false);
+
     return (
         <section className="py-16 bg-background border-y border-border relative overflow-hidden">
             <div className="container mx-auto px-4">
@@ -45,40 +52,48 @@ export default function SchoolRegistration() {
                         </h3>
                     </div>
 
-                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent">
+                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent group">
                         <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-background to-transparent" />
                         <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-background to-transparent" />
 
-                        <motion.div
-                            className="flex gap-8 items-center"
-                            animate={{ x: ["0%", "-50%"] }}
-                            transition={{
-                                duration: 20,
-                                ease: "linear",
-                                repeat: Infinity,
-                            }}
-                            style={{ width: "fit-content" }}
+                        <div
+                            className="flex gap-8 items-center animate-scroll group-hover:[animation-play-state:paused]"
+                            style={{ width: "fit-content", animationDuration: "20s" }}
                         >
                             {/* First set of schools */}
-                            {schools.map((_, index) => (
+                            {schools.map((school, index) => (
                                 <div
                                     key={`first-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
                                 >
-                                    <span className="text-sm font-medium text-muted-foreground">School {index + 1}</span>
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={`/images/schools/${school}`}
+                                            alt={`School ${index + 1}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
                             ))}
 
                             {/* Second set of schools for seamless loop */}
-                            {schools.map((_, index) => (
+                            {schools.map((school, index) => (
                                 <div
                                     key={`second-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-muted/30 border border-border items-center justify-center p-6 hover:bg-muted/50 transition-colors"
+                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
                                 >
-                                    <span className="text-sm font-medium text-muted-foreground">School {index + 1}</span>
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={`/images/schools/${school}`}
+                                            alt={`School ${index + 1}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
                             ))}
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>

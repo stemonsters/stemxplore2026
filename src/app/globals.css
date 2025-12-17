@@ -192,3 +192,22 @@
   animation-delay: 1.5s !important;
   will-change: transform;
 }
+
+/* Scroll animation for carousels */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
