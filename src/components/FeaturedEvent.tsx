@@ -3,6 +3,7 @@
 
 import { Brain, Cpu, Atom, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function FeaturedEvent() {
     return (
@@ -17,7 +18,7 @@ export default function FeaturedEvent() {
                     className="grid lg:grid-cols-2 gap-12 lg:gap-32 items-center mb-32"
                 >
                     {/* Left Column */}
-                    <div className="relative">
+                    <ScrollReveal className="relative">
                         <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-accent/10 text-sm font-medium text-accent tracking-widest border border-accent/20">
                             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
                             Panel Discussion
@@ -44,10 +45,10 @@ export default function FeaturedEvent() {
                         <div className="absolute -z-10 -top-20 -left-20 opacity-[0.05] pointer-events-none">
                             <Atom className="w-96 h-96 text-primary" />
                         </div>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Right Column */}
-                    <div className="flex flex-col justify-center relative">
+                    <ScrollReveal className="flex flex-col justify-center relative" delay={0.1}>
                         <div className="pl-8 border-l-2 border-primary/20">
                             <p className="text-lg md:text-xl text-muted-foreground mb-12 font-light leading-relaxed">
                                 How do we prepare ourselves and the next generation for careers that don't exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
@@ -82,11 +83,11 @@ export default function FeaturedEvent() {
                                 </Button>
                             </div>
                         </div>
-                    </div>
+                    </ScrollReveal>
                 </div>
 
                 {/* Expert Panel Section (Merged) */}
-                <div>
+                <ScrollReveal delay={0.2}>
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 text-center md:text-left">
                         <div>
                             <h2 className="text-3xl font-bold mb-2">Meet the Experts</h2>
@@ -117,7 +118,7 @@ export default function FeaturedEvent() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </ScrollReveal>
             </div>
         </section>
     );

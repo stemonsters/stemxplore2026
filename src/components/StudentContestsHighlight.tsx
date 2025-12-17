@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 
 import { Trophy, Globe, Ticket, ArrowRight } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function StudentContestsHighlight() {
     const features = [
@@ -24,7 +25,7 @@ export default function StudentContestsHighlight() {
         <section id="contests" className="py-12 border-y border-border bg-muted/50 scroll-mt-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-                    <div className="md:col-span-4">
+                    <ScrollReveal className="md:col-span-4">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 tracking-tight">
                                 Student Contests
@@ -42,9 +43,9 @@ export default function StudentContestsHighlight() {
                                 </a>
                             </Button>
                         </div>
-                    </div>
+                    </ScrollReveal>
 
-                    <div className="md:col-span-8">
+                    <ScrollReveal className="md:col-span-8" delay={0.1}>
                         <div className="grid grid-cols-3 gap-px bg-border border border-border">
                             {features.map((feature, index) => (
                                 <div
@@ -64,7 +65,7 @@ export default function StudentContestsHighlight() {
                                 Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </a>
                         </Button>
-                    </div>
+                    </ScrollReveal>
                 </div>
             </div>
         </section>

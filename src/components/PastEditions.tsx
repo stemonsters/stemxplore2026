@@ -2,6 +2,7 @@
 
 
 import Image from "next/image";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function PastEditions() {
     const years = [2025, 2024, 2023, 2022];
@@ -9,12 +10,12 @@ export default function PastEditions() {
     return (
         <section className="py-20 bg-muted/50 border-t border-b border-border">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-2 md:gap-0">
+                <ScrollReveal className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-2 md:gap-0">
                     <h2 className="text-3xl md:text-4xl font-bold">Past Editions</h2>
                     <span className="text-sm text-muted-foreground">Our History</span>
-                </div>
+                </ScrollReveal>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <ScrollReveal className="grid grid-cols-2 md:grid-cols-4 gap-4" delay={0.1}>
                     {years.map((year, index) => (
                         <div
                             key={year}
@@ -45,7 +46,7 @@ export default function PastEditions() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </ScrollReveal>
             </div>
         </section>
     );

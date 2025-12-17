@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { ArrowRight, GraduationCap, Sparkles, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ScrollReveal from "@/components/ScrollReveal";
 import { useState } from "react";
 
 export default function StudentRegistration() {
@@ -75,7 +76,7 @@ export default function StudentRegistration() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-5xl mx-auto">
                     {/* Left Column - Info */}
-                    <div>
+                    <ScrollReveal>
                         <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-none bg-primary/10 text-xs font-medium text-primary uppercase tracking-widest border border-primary/20">
                             <Sparkles className="w-3.5 h-3.5" />
                             Register Now
@@ -113,10 +114,10 @@ export default function StudentRegistration() {
                                 <span>Get ready to innovate on Mar 8 & Mar 15!</span>
                             </div>
                         </div>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Right Column - Form */}
-                    <div>
+                    <ScrollReveal delay={0.1}>
                         <div className="relative">
                             {/* Decorative corners */}
                             <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-primary" />
@@ -261,7 +262,7 @@ export default function StudentRegistration() {
                                 </p>
                             </form>
                         </div>
-                    </div>
+                    </ScrollReveal>
                 </div>
             </div>
 

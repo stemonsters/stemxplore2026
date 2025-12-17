@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import { Heart, Gift, ShoppingBag, Handshake, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion, useAnimationControls } from "framer-motion";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Support() {
     const partners = [
@@ -24,7 +25,7 @@ export default function Support() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
                     {/* Left Side: Why Support */}
-                    <div>
+                    <ScrollReveal>
                         <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-primary/10 text-sm font-medium text-primary tracking-widest border border-primary/20">
                             <Heart className="w-3 h-3" />
                             SUPPORT THE MISSION
@@ -65,10 +66,10 @@ export default function Support() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Right Side: How to Support Tabs */}
-                    <div className="w-full">
+                    <ScrollReveal className="w-full" delay={0.1}>
                         <div>
                             <Tabs defaultValue="sponsor" className="w-full">
                                 <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
@@ -191,11 +192,11 @@ export default function Support() {
                                 </div>
                             </Tabs>
                         </div>
-                    </div>
+                    </ScrollReveal>
                 </div>
 
                 {/* Event Partners Carousel */}
-                <div className="mt-20">
+                <ScrollReveal className="mt-20" delay={0.2}>
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                             Past Partners
@@ -245,7 +246,7 @@ export default function Support() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </ScrollReveal>
             </div>
         </section>
     );

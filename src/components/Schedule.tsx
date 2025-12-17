@@ -17,12 +17,12 @@ const scheduleData = [
             {
                 time: "10:30 AM - 11:30 AM IST",
                 title: "Junior Hackathon - Scratch Finals",
-                type: "Competition",
+                type: "Contest",
             },
             {
                 time: "11:45 AM - 12:30 PM IST",
                 title: "Let's Talk STEM - Finals",
-                type: "Competition",
+                type: "Contest",
             },
             {
                 time: "07:00 PM - 08:00 PM IST",
@@ -37,7 +37,7 @@ const scheduleData = [
             {
                 time: "11:00 AM IST",
                 title: "Story Behind My Tech - Finals",
-                type: "Competition",
+                type: "Contest",
             },
         ],
     },
@@ -50,19 +50,17 @@ export default function Schedule() {
             <div className="space-y-6">
                 {day.events.map((event, index) => (
                     <Card key={index} className="bg-card/50 backdrop-blur-sm border-primary/20 dark:border-accent/20 hover:border-primary/50 dark:hover:border-accent/50 transition-colors">
-                        <CardContent className="p-5 space-y-3">
-                            <div className="flex items-center justify-between flex-wrap gap-2">
-                                <div className="flex items-center text-sm text-muted-foreground">
+                        <CardContent className="p-5 flex flex-col gap-3">
+                            <div className="flex items-center justify-between gap-3">
+                                <span className="flex items-center text-sm text-muted-foreground font-mono">
                                     <Clock className="w-4 h-4 mr-2 text-primary" />
                                     {event.time}
-                                </div>
-                                <Badge variant="secondary" className="text-xs">
+                                </span>
+                                <Badge variant="outline" className="shrink-0 px-3 py-1 text-xs md:text-sm font-medium border-primary/20 text-primary bg-primary/5 uppercase tracking-wider">
                                     {event.type}
                                 </Badge>
                             </div>
-                            <div>
-                                <h4 className="text-xl font-bold text-foreground">{event.title}</h4>
-                            </div>
+                            <h4 className="text-lg md:text-xl font-bold text-foreground leading-snug">{event.title}</h4>
                         </CardContent>
                     </Card>
                 ))}

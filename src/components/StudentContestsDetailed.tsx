@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight, Trophy, Users, Calendar, Star, ChevronRight, Gavel } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function StudentContestsDetailed() {
     return (
@@ -11,7 +12,7 @@ export default function StudentContestsDetailed() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
                     {/* Left Column: Heading & Steps */}
-                    <div>
+                    <ScrollReveal>
                         <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-primary/10 text-sm font-medium text-primary tracking-widest border border-primary/20">
                             <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
                             CONTEST DETAILS
@@ -58,12 +59,10 @@ export default function StudentContestsDetailed() {
                         <Button asChild size="lg" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 rounded-none shadow-sm border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
                             <a href="#register">Register Now</a>
                         </Button>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Right Column: Tabs */}
-                    <div
-                        className="w-full"
-                    >
+                    <ScrollReveal className="w-full" delay={0.1}>
                         <Tabs defaultValue="junior-hackathon" className="w-full">
                             <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                 <TabsTrigger
@@ -234,11 +233,11 @@ export default function StudentContestsDetailed() {
                         <Button asChild size="lg" className="md:hidden w-full mt-6 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none shadow-sm border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
                             <a href="#register">Register Now</a>
                         </Button>
-                    </div>
+                    </ScrollReveal>
                 </div>
 
                 {/* Judges & Mentors Section (Merged) */}
-                <div className="mt-24 pt-12 border-t border-border">
+                <ScrollReveal className="mt-24 pt-12 border-t border-border" delay={0.2}>
                     <div className="mb-12 text-center md:text-left">
                         <h2 className="text-3xl font-bold font-mono mb-2">Judges & Mentors</h2>
                         <div className="w-20 h-1 bg-primary mb-8 mx-auto md:mx-0" />
@@ -279,7 +278,7 @@ export default function StudentContestsDetailed() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </ScrollReveal>
             </div>
         </section>
     );

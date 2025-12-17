@@ -1,4 +1,5 @@
 import { Target, Rocket, Lightbulb } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function OurStory() {
     return (
@@ -6,7 +7,7 @@ export default function OurStory() {
             <div className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Visual Side */}
-                    <div className="relative">
+                    <ScrollReveal className="relative">
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
                         <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
 
@@ -49,11 +50,11 @@ export default function OurStory() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Text Side */}
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+                    <ScrollReveal delay={0.1}>
+                        <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
                             Celebrating Science, <br />
                             <span className="text-primary">Igniting Innovation</span>
                         </h2>
@@ -69,7 +70,7 @@ export default function OurStory() {
                                 Whether it's building a project in Scratch, debating the future of AI, or presenting a scientific model, STEMXplore is about empowering the next generation of innovators with the skills they need for the future.
                             </p>
                         </div>
-                    </div>
+                    </ScrollReveal>
                 </div>
             </div>
         </section>

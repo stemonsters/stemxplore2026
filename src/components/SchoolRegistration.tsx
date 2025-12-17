@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, School } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function SchoolRegistration() {
     const schools = Array(5).fill([
@@ -17,9 +18,7 @@ export default function SchoolRegistration() {
         <section className="py-16 bg-background border-y border-border relative overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-                    <div
-                        className="flex-1 text-center md:text-left"
-                    >
+                    <ScrollReveal className="flex-1 text-center md:text-left">
                         <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
                             <div className="p-2 bg-primary/10 rounded-lg">
                                 <School className="w-5 h-5 text-primary" />
@@ -32,20 +31,21 @@ export default function SchoolRegistration() {
                         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                             Partner with <span className="font-semibold text-foreground">STEMXplore 2026</span>. Register to receive a custom portal link for your students to sign up for events seamlessly.
                         </p>
-                    </div>
+                    </ScrollReveal>
 
-                    <div
+                    <ScrollReveal
                         className="shrink-0"
+                        delay={0.1}
                     >
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-14 text-lg rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
                             Know More
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Button>
-                    </div>
+                    </ScrollReveal>
                 </div>
 
                 {/* Partner Schools Carousel */}
-                <div className="mt-20">
+                <ScrollReveal className="mt-20" delay={0.2}>
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                             Our Partner Schools
@@ -95,7 +95,7 @@ export default function SchoolRegistration() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </ScrollReveal>
             </div>
         </section>
     );
