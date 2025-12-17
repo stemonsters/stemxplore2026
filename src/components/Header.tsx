@@ -10,12 +10,15 @@ import Image from "next/image";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [showNavLogo, setShowNavLogo] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
+            // Show nav logo after scrolling past hero logo (around 200px)
+            setShowNavLogo(window.scrollY > 200);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -36,8 +39,8 @@ export default function Header() {
                 }`}
         >
             <div className="w-full lg:max-w-[80vw] mx-auto px-4 h-16 flex items-center justify-between">
-                {/* Logo */}
-                <Link href="/" className="flex items-center">
+                {/* Logo - always visible on other pages, reveals on scroll on homepage */}
+                <Link href="/" className={`flex items-center transition-all duration-300 ${(pathname !== "/" || showNavLogo) ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
                     <Image src="/images/stemxplore-logo.png" alt="STEMXplore 2026 Logo" width={100} height={100} className="h-12 w-auto" />
                 </Link>
 
@@ -47,7 +50,7 @@ export default function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-mono text-muted-foreground hover:text-primary transition-colors tracking-wide"
+                            className="text-base font-mono text-muted-foreground hover:text-primary transition-colors tracking-wide"
                         >
                             {link.name}
                         </Link>
@@ -114,7 +117,7 @@ export default function Header() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-sm font-mono text-foreground hover:text-primary transition-colors border-l-2 border-transparent hover:border-primary pl-2"
+                                    className="text-base font-mono text-foreground hover:text-primary transition-colors border-l-2 border-transparent hover:border-primary pl-2"
                                 >
                                     {link.name}
                                 </Link>

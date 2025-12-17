@@ -50,10 +50,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-6 md:py-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-foreground max-w-4xl font-bold">
+        <h2 className="text-3xl md:text-4xl mb-4 text-foreground max-w-4xl font-bold">
           Event Schedule
         </h2>
-        <p className="text-muted-foreground text-sm md:text-base max-w-sm font-mono">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-sm font-mono">
           Two days of innovation, learning, and celebration of science.
         </p>
       </div>

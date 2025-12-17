@@ -32,7 +32,7 @@ export default function StudentContestsHighlight() {
                                     Register Now
                                 </span>
                             </h2>
-                            <p className="text-muted-foreground mb-0 md:mb-8">
+                            <p className="text-lg md:text-xl text-muted-foreground mb-0 md:mb-8 leading-relaxed">
                                 Participate in our flagship challenges. Showcase your innovation. Win big.
                             </p>
                             {/* Desktop button */}
@@ -54,7 +54,7 @@ export default function StudentContestsHighlight() {
                                     <div className="mb-2 md:mb-4 p-2 md:p-3 bg-muted w-fit group-hover:bg-primary/10 transition-colors">
                                         {feature.icon}
                                     </div>
-                                    <h3 className="text-sm md:text-lg font-bold">{feature.text}</h3>
+                                    <h3 className="text-base md:text-lg font-medium">{feature.text}</h3>
                                 </div>
                             ))}
                         </div>

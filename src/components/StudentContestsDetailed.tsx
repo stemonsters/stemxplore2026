@@ -12,9 +12,9 @@ export default function StudentContestsDetailed() {
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
                     {/* Left Column: Heading & Steps */}
                     <div>
-                        <div className="flex items-center gap-2 mb-6 text-muted-foreground text-sm">
-                            <span className="w-2 h-2 bg-primary rounded-full" />
-                            <span>Contest Details</span>
+                        <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-primary/10 text-sm font-medium text-primary tracking-widest border border-primary/20">
+                            <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
+                            CONTEST DETAILS
                         </div>
 
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight text-foreground">
@@ -22,14 +22,14 @@ export default function StudentContestsDetailed() {
                             <span className="text-primary">Innovation</span>
                         </h2>
 
-                        <div className="space-y-6 text-lg text-muted-foreground mb-10">
+                        <div className="space-y-6 text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
                             <div className="flex gap-4 items-start">
                                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
                                     <span className="text-primary font-bold">1</span>
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-foreground text-xl mb-1">Present to Experts</h3>
-                                    <p className="text-base">Finalists will present submissions to distinguished judges from top institutions.</p>
+                                    <p className="text-lg md:text-xl leading-relaxed">Finalists will present submissions to distinguished judges from top institutions.</p>
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ export default function StudentContestsDetailed() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-foreground text-xl mb-1">Win Grand Prizes</h3>
-                                    <p className="text-base">Exciting rewards and scholarships for the top performers.</p>
+                                    <p className="text-lg md:text-xl leading-relaxed">Exciting rewards and scholarships for the top performers.</p>
                                 </div>
                             </div>
 
@@ -49,7 +49,7 @@ export default function StudentContestsDetailed() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-foreground text-xl mb-1">Open for All</h3>
-                                    <p className="text-base">Inclusive participation with dedicated Q&A sessions.</p>
+                                    <p className="text-lg md:text-xl leading-relaxed">Inclusive participation with dedicated Q&A sessions.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,11 +116,11 @@ export default function StudentContestsDetailed() {
                                             <span className="font-semibold">10:30 AM - 11:30 AM IST</span>
                                         </div>
                                     </div>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                         Theme: <strong>&quot;Reduce Reuse Recycle&quot;</strong>.
                                         Quiz + Hackathon format.
                                     </p>
-                                    <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground pt-4 border-t border-border/50">
+                                    <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-center gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                                             Submission: Within 72 Hours
@@ -165,10 +165,10 @@ export default function StudentContestsDetailed() {
                                             <span className="font-semibold">11:45 AM - 12:30 PM IST</span>
                                         </div>
                                     </div>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                         Present your perspective on the thought-provoking topic: <strong>&quot;Science is not necessary when we have AI&quot;</strong>.
                                     </p>
-                                    <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground pt-4 border-t border-border/50">
+                                    <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-center gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                                             Round 1 Deadline: Feb 20th
@@ -209,10 +209,10 @@ export default function StudentContestsDetailed() {
                                             <span className="font-semibold">11:00 AM IST</span>
                                         </div>
                                     </div>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                         Innovative solutions for <strong>&quot;Water Sustainability&quot;</strong> or <strong>&quot;Energy Efficient Solutions&quot;</strong>.
                                     </p>
-                                    <div className="grid grid-cols-1 gap-3 text-sm text-muted-foreground pt-4 border-t border-border/50">
+                                    <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-center gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                                             Round 1 Deadline: Feb 20th
@@ -240,13 +240,13 @@ export default function StudentContestsDetailed() {
                 {/* Judges & Mentors Section (Merged) */}
                 <div className="mt-24 pt-12 border-t border-border">
                     <div className="mb-12 text-center md:text-left">
-                        <h2 className="text-2xl font-bold font-mono uppercase mb-2">Judges & Mentors</h2>
+                        <h2 className="text-3xl font-bold font-mono mb-2">Judges & Mentors</h2>
                         <div className="w-20 h-1 bg-primary mb-8 mx-auto md:mx-0" />
-                        <div className="space-y-4 max-w-3xl">
-                            <p className="text-lg text-muted-foreground leading-relaxed">
+                        <div className="w-full flex flex-col md:flex-row gap-8">
+                            <p className="flex-1 text-lg md:text-xl text-muted-foreground leading-relaxed">
                                 Be ready to impress and be inspired as finalists and winners present their submissions to our distinguished judges and mentors.
                             </p>
-                            <p className="text-lg text-muted-foreground leading-relaxed">
+                            <p className="flex-1 text-lg md:text-xl text-muted-foreground leading-relaxed">
                                 At the end of the events, all attendees get a chance to interact with the esteemed judges for a no-filter Q&A session!
                             </p>
                         </div>
@@ -266,11 +266,11 @@ export default function StudentContestsDetailed() {
                             </div>
 
                             <h3 className="text-2xl font-bold mb-3">Jury Selection in Progress</h3>
-                            <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                                Our team is currently selecting a panel of distinguished judges and mentors to guide and evaluate the participants.
+                            <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto mb-6 leading-relaxed">
+                                Our team is currently selecting a panel of distinguished judges to guide the participants.
                             </p>
 
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>

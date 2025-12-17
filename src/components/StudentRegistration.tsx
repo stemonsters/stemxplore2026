@@ -81,34 +81,34 @@ export default function StudentRegistration() {
                             Register Now
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-foreground leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-foreground leading-tight">
                             Join the <br />
                             <span className="text-primary">STEMXplore 2026</span> <br />
                             Revolution
                         </h2>
 
-                        <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
+                        <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
                             Be part of India&apos;s most exciting virtual STEM symposium.
                             Register now to participate in competitions, attend panel discussions,
                             and showcase your innovation.
                         </p>
 
-                        <div className="space-y-4 text-sm text-muted-foreground">
-                            <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span className="text-primary font-bold text-xs">1</span>
+                        <div className="space-y-6 text-lg md:text-xl text-muted-foreground">
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span className="text-primary font-bold text-base">1</span>
                                 </div>
                                 <span>Fill in your details below</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span className="text-primary font-bold text-xs">2</span>
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span className="text-primary font-bold text-base">2</span>
                                 </div>
                                 <span>Receive confirmation & event details via email</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span className="text-primary font-bold text-xs">3</span>
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span className="text-primary font-bold text-base">3</span>
                                 </div>
                                 <span>Get ready to innovate on Mar 8 & Mar 15!</span>
                             </div>
@@ -126,18 +126,18 @@ export default function StudentRegistration() {
 
                             <form
                                 onSubmit={handleSubmit}
-                                className="bg-card/50 backdrop-blur-sm border border-border p-6 space-y-4"
+                                className="bg-card/50 backdrop-blur-sm border border-border p-6 md:p-8 space-y-6"
                             >
-                                <div className="flex items-center gap-2 mb-1">
-                                    <div className="p-1.5 bg-primary/10 rounded-lg">
-                                        <GraduationCap className="w-4 h-4 text-primary" />
+                                <div className="flex items-center gap-3 mb-2">
+                                    <div className="p-2 bg-primary/10 rounded-lg">
+                                        <GraduationCap className="w-6 h-6 text-primary" />
                                     </div>
-                                    <h3 className="text-lg font-bold text-foreground">Student Registration</h3>
+                                    <h3 className="text-2xl font-bold text-foreground">Student Registration</h3>
                                 </div>
 
                                 {/* Student Name */}
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="studentName" className="text-xs font-medium text-foreground">
+                                <div className="space-y-2">
+                                    <Label htmlFor="studentName" className="text-base font-medium text-foreground">
                                         Student Name <span className="text-primary">*</span>
                                     </Label>
                                     <Input
@@ -147,13 +147,13 @@ export default function StudentRegistration() {
                                         value={formData.studentName}
                                         onChange={(e) => handleChange("studentName", e.target.value)}
                                         required
-                                        className="h-10 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-sm"
+                                        className="h-12 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-base"
                                     />
                                 </div>
 
                                 {/* Student Email */}
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="studentEmail" className="text-xs font-medium text-foreground">
+                                <div className="space-y-2">
+                                    <Label htmlFor="studentEmail" className="text-base font-medium text-foreground">
                                         Student Email <span className="text-primary">*</span>
                                     </Label>
                                     <Input
@@ -163,15 +163,15 @@ export default function StudentRegistration() {
                                         value={formData.studentEmail}
                                         onChange={(e) => handleChange("studentEmail", e.target.value)}
                                         required
-                                        className="h-10 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-sm"
+                                        className="h-12 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-base"
                                     />
                                 </div>
 
                                 {/* Mobile & Grade Row */}
-                                <div className="grid grid-cols-2 gap-3">
-                                    <div className="space-y-1.5">
-                                        <Label htmlFor="mobile" className="text-xs font-medium text-foreground">
-                                            Mobile <span className="text-muted-foreground text-[10px]">(optional)</span>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="space-y-2">
+                                        <Label htmlFor="mobile" className="text-base font-medium text-foreground">
+                                            Mobile <span className="text-muted-foreground text-xs">(optional)</span>
                                         </Label>
                                         <Input
                                             id="mobile"
@@ -179,12 +179,12 @@ export default function StudentRegistration() {
                                             placeholder="+91 98765 43210"
                                             value={formData.mobile}
                                             onChange={(e) => handleChange("mobile", e.target.value)}
-                                            className="h-10 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-sm"
+                                            className="h-12 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-base"
                                         />
                                     </div>
 
-                                    <div className="space-y-1.5">
-                                        <Label htmlFor="grade" className="text-xs font-medium text-foreground">
+                                    <div className="space-y-2">
+                                        <Label htmlFor="grade" className="text-base font-medium text-foreground">
                                             Grade <span className="text-primary">*</span>
                                         </Label>
                                         <Select
@@ -192,7 +192,7 @@ export default function StudentRegistration() {
                                             onValueChange={(value) => handleChange("grade", value)}
                                             required
                                         >
-                                            <SelectTrigger className="h-10 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-sm">
+                                            <SelectTrigger className="h-12 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-base">
                                                 <SelectValue placeholder="Select" />
                                             </SelectTrigger>
                                             <SelectContent>
@@ -209,8 +209,8 @@ export default function StudentRegistration() {
                                 </div>
 
                                 {/* School Name */}
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="schoolName" className="text-xs font-medium text-foreground">
+                                <div className="space-y-2">
+                                    <Label htmlFor="schoolName" className="text-base font-medium text-foreground">
                                         Name of School <span className="text-primary">*</span>
                                     </Label>
                                     <Input
@@ -220,22 +220,22 @@ export default function StudentRegistration() {
                                         value={formData.schoolName}
                                         onChange={(e) => handleChange("schoolName", e.target.value)}
                                         required
-                                        className="h-10 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-sm"
+                                        className="h-12 rounded-none border-border bg-background/50 focus:border-primary focus:ring-primary/20 text-base"
                                     />
                                 </div>
 
                                 {/* Message */}
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="message" className="text-xs font-medium text-foreground">
-                                        Message <span className="text-muted-foreground text-[10px]">(optional)</span>
+                                <div className="space-y-2">
+                                    <Label htmlFor="message" className="text-base font-medium text-foreground">
+                                        Message <span className="text-muted-foreground text-xs">(optional)</span>
                                     </Label>
                                     <textarea
                                         id="message"
                                         placeholder="Any questions or comments?"
                                         value={formData.message}
                                         onChange={(e) => handleChange("message", e.target.value)}
-                                        rows={2}
-                                        className="w-full rounded-none border border-border bg-background/50 px-3 py-2 text-sm placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none resize-none"
+                                        rows={3}
+                                        className="w-full rounded-none border border-border bg-background/50 px-3 py-3 text-base placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none resize-none"
                                     />
                                 </div>
 
@@ -244,19 +244,19 @@ export default function StudentRegistration() {
                                     type="submit"
                                     size="lg"
                                     disabled={isSubmitting}
-                                    className="w-full h-11 text-sm bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full h-12 text-base bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     {isSubmitting ? (
                                         "Registering..."
                                     ) : (
                                         <>
                                             Register Now
-                                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </>
                                     )}
                                 </Button>
 
-                                <p className="text-xs text-muted-foreground text-center pt-2">
+                                <p className="text-sm text-muted-foreground text-center pt-2">
                                     By registering, you agree to receive event updates via email.
                                 </p>
                             </form>

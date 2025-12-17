@@ -18,24 +18,24 @@ export default function FeaturedEvent() {
                 >
                     {/* Left Column */}
                     <div className="relative">
-                        <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-accent/10 text-xs font-medium text-accent uppercase tracking-widest border border-accent/20">
+                        <div className="inline-flex items-center gap-2 mb-8 px-3 py-1 rounded-none bg-accent/10 text-sm font-medium text-accent tracking-widest border border-accent/20">
                             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
-                            KEYNOTE
+                            Panel Discussion
                         </div>
 
-                        <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight tracking-tight">
-                            LEARNING FOR CAREERS/ <br />
-                            <span className="text-primary">LIFE IN 2030</span>
+                        <h2 className="text-3xl md:text-5xl font-medium mb-8 leading-tight tracking-tight">
+                            "Learning For Careers/ <br />
+                            <span className="text-primary">Life In 2030</span>"
                         </h2>
                         <div className="flex flex-wrap items-center gap-3 md:gap-4">
-                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-base font-medium border border-primary/20">
                                 <User className="w-4 h-4" />
-                                For Professionals & Educators
+                                For Parents & Educators
                             </span>
-                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-sm font-medium border border-border">
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-base font-medium border border-border">
                                 March 8, 2026
                             </span>
-                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-sm font-medium border border-border">
+                            <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-base font-medium border border-border">
                                 7:00 PM IST
                             </span>
                         </div>
@@ -58,19 +58,19 @@ export default function FeaturedEvent() {
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Brain className="w-6 h-6" />
                                     </div>
-                                    <span className="text-sm font-bold">Upskilling</span>
+                                    <span className="text-base md:text-lg">Upskilling</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Cpu className="w-6 h-6" />
                                     </div>
-                                    <span className="text-sm font-bold">2030 Careers</span>
+                                    <span className="text-base md:text-lg">2030 Careers</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Atom className="w-6 h-6" />
                                     </div>
-                                    <span className="text-sm font-bold">Lifelong Learning</span>
+                                    <span className="text-base md:text-lg">Lifelong Learning</span>
                                 </div>
                             </div>
 
@@ -87,9 +87,10 @@ export default function FeaturedEvent() {
 
                 {/* Expert Panel Section (Merged) */}
                 <div>
-                    <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 border-b border-border pb-6 text-center md:text-left">
+                    <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 text-center md:text-left">
                         <div>
-                            <h2 className="text-3xl font-bold mb-2">Expert Panel</h2>
+                            <h2 className="text-3xl font-bold mb-2">Meet the Experts</h2>
+                            <div className="w-20 h-1 bg-primary mb-8 mx-auto md:mx-0" />
                         </div>
                     </div>
 
@@ -103,9 +104,8 @@ export default function FeaturedEvent() {
                             </div>
 
                             <h3 className="text-2xl font-bold mb-3">Panelists Announcement Pending</h3>
-                            <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                                We are currently finalizing our lineup of industry experts and thought leaders.
-                                Check back soon for the full reveal!
+                            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto mb-6 leading-relaxed">
+                                Finalizing our lineup of industry experts and thought leaders. Stay tuned!
                             </p>
 
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">

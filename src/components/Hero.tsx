@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
-import { Calendar, ArrowRight, ChevronRight, Laptop, Users, Trophy, Globe } from "lucide-react";
+import { Calendar, ArrowRight, ChevronRight, School, Users, Trophy, Globe } from "lucide-react";
 import Image from "next/image";
 
 function CountUp({ end, prefix = "", suffix = "", duration = 2000 }: { end: number; prefix?: string; suffix?: string; duration?: number }) {
@@ -45,10 +45,14 @@ export default function Hero() {
                     <div
                         className="lg:col-span-7"
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-primary/5 text-primary text-xs font-medium mb-6 md:mb-8">
-                            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                            FIFTH EDITION
-                        </div>
+                        {/* Hero Logo - visible initially */}
+                        <Image
+                            src="/images/stemxplore-logo.png"
+                            alt="STEMXplore 2026 Logo"
+                            width={180}
+                            height={180}
+                            className="h-24 md:h-32 w-auto mb-4 md:mb-6"
+                        />
 
 
                         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
@@ -58,7 +62,7 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-base sm:text-lg md:text-2xl text-muted-foreground max-w-2xl mb-8 font-light border-l-2 border-accent pl-4 md:pl-6">
+                        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 font-light border-l-2 border-accent pl-4 md:pl-6">
                             A 2-day mega virtual event to celebrate science and hands-on learning.
                         </p>
 
@@ -82,8 +86,8 @@ export default function Hero() {
                                     <span className="text-xs uppercase tracking-wide">Mar</span>
                                 </div>
                                 <div>
-                                    <div className="text-base text-primary font-bold uppercase tracking-wider">Day 1</div>
-                                    <div className="text-sm text-muted-foreground">Saturday, 2026</div>
+                                    <div className="text-lg text-primary font-bold uppercase tracking-wider">Day 1</div>
+                                    <div className="text-base text-muted-foreground">Saturday, 2026</div>
                                 </div>
                             </div>
 
@@ -93,22 +97,22 @@ export default function Hero() {
                                     <span className="text-xs uppercase tracking-wide">Mar</span>
                                 </div>
                                 <div>
-                                    <div className="text-base text-accent font-bold uppercase tracking-wider">Day 2</div>
-                                    <div className="text-sm text-muted-foreground">Saturday, 2026</div>
+                                    <div className="text-lg text-accent font-bold uppercase tracking-wider">Day 2</div>
+                                    <div className="text-base text-muted-foreground">Saturday, 2026</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="lg:col-span-5 hidden lg:block relative">
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-2 gap-6 mt-[60px]">
                             {/* Column 1 - Staggered Down */}
                             <div className="space-y-6 pt-12">
                                 <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
                                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10">
+                                    <div className="relative z-10 flex flex-col items-center text-center">
                                         <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
-                                            <Laptop className="w-7 h-7 text-primary" />
+                                            <School className="w-7 h-7 text-primary" />
                                         </div>
                                         <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={10} suffix="+" /></div>
                                         <div className="text-sm text-muted-foreground font-medium">Cities and Schools</div>
@@ -116,7 +120,7 @@ export default function Hero() {
                                 </div>
                                 <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
                                     <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10">
+                                    <div className="relative z-10 flex flex-col items-center text-center">
                                         <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
                                             <Globe className="w-7 h-7 text-accent" />
                                         </div>
@@ -130,7 +134,7 @@ export default function Hero() {
                             <div className="space-y-6">
                                 <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
                                     <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10">
+                                    <div className="relative z-10 flex flex-col items-center text-center">
                                         <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
                                             <Users className="w-7 h-7 text-accent" />
                                         </div>
@@ -140,7 +144,7 @@ export default function Hero() {
                                 </div>
                                 <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
                                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10">
+                                    <div className="relative z-10 flex flex-col items-center text-center">
                                         <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
                                             <Trophy className="w-7 h-7 text-primary" />
                                         </div>

@@ -22,7 +22,7 @@ export default function SchoolRegistration() {
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3">
                             Are you a progressive school looking to participate?
                         </h2>
-                        <p className="text-muted-foreground leading-relaxed max-w-2xl">
+                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                             Partner with <span className="font-semibold text-foreground">STEMXplore 2026</span>. Register to receive a custom portal link for your students to sign up for events seamlessly.
                         </p>
                     </div>

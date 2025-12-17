@@ -35,7 +35,7 @@ export default function About() {
                                 className="bg-background border border-border p-6"
                             >
                                 <h3 className="font-bold text-lg mb-4 text-accent">Our Mission</h3>
-                                <p className="text-muted-foreground">
+                                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                     Empowering students through knowledge. Bringing together educators, parents, and thought leaders.
                                 </p>
                             </div>
@@ -44,7 +44,7 @@ export default function About() {
                                 className="bg-background border border-border p-6"
                             >
                                 <h3 className="font-bold text-lg mb-4 text-accent">Program Highlights</h3>
-                                <p className="text-muted-foreground">
+                                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                     Explore STEM beyond textbooks. Build future-ready skills through hands-on challenges.
                                 </p>
                             </div>

@@ -18,7 +18,7 @@ export default function OurStory() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-lg mb-2">Virtual Symposium</h3>
-                                        <p className="text-muted-foreground text-sm leading-relaxed">
+                                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                                             A comprehensive 2-day virtual event designed to celebrate National Science Day 2026.
                                         </p>
                                     </div>
@@ -30,7 +30,7 @@ export default function OurStory() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-lg mb-2">Innovation First</h3>
-                                        <p className="text-muted-foreground text-sm leading-relaxed">
+                                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                                             Focusing on hands-on challenges and creative problem-solving rather than rote learning.
                                         </p>
                                     </div>
@@ -42,7 +42,7 @@ export default function OurStory() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-lg mb-2">Community Led</h3>
-                                        <p className="text-muted-foreground text-sm leading-relaxed">
+                                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                                             Bringing together students, educators, parents, and industry experts on a single platform.
                                         </p>
                                     </div>
@@ -58,7 +58,7 @@ export default function OurStory() {
                             <span className="text-primary">Igniting Innovation</span>
                         </h2>
 
-                        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                        <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
                             <p>
                                 <strong>STEMXplore 2026</strong> is a premier virtual symposium accessible to students across the nation. Our goal is simple: to celebrate India’s National Science Day through discovery, creativity, and practical application.
                             </p>

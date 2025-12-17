@@ -77,7 +77,7 @@ export default function WebinarRegistrationForm() {
                             <span className="text-primary">Life in 2030</span>
                         </h2>
 
-                        <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
+                        <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
                             How do we prepare ourselves and the next generation for careers that don't exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
                         </p>
 
@@ -88,7 +88,7 @@ export default function WebinarRegistrationForm() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-foreground mb-1">Upskilling</h4>
-                                    <p className="text-sm text-muted-foreground">Learn how to continuously adapt and grow your skillset for the future.</p>
+                                    <p className="text-base md:text-lg text-muted-foreground">Learn how to continuously adapt and grow your skillset for the future.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -97,7 +97,7 @@ export default function WebinarRegistrationForm() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-foreground mb-1">2030 Careers</h4>
-                                    <p className="text-sm text-muted-foreground">Discover emerging career paths and industries of the future.</p>
+                                    <p className="text-base md:text-lg text-muted-foreground">Discover emerging career paths and industries of the future.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -106,7 +106,7 @@ export default function WebinarRegistrationForm() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-foreground mb-1">Lifelong Learning</h4>
-                                    <p className="text-sm text-muted-foreground">Strategies for continuous education in an ever-evolving world.</p>
+                                    <p className="text-base md:text-lg text-muted-foreground">Strategies for continuous education in an ever-evolving world.</p>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ export default function WebinarRegistrationForm() {
 
                             {/* Full Name */}
                             <div className="space-y-2">
-                                <Label htmlFor="fullName" className="text-sm font-medium text-foreground">
+                                <Label htmlFor="fullName" className="text-base font-medium text-foreground">
                                     Full Name <span className="text-primary">*</span>
                                 </Label>
                                 <div className="relative">
@@ -154,7 +154,7 @@ export default function WebinarRegistrationForm() {
 
                             {/* Email */}
                             <div className="space-y-2">
-                                <Label htmlFor="email" className="text-sm font-medium text-foreground">
+                                <Label htmlFor="email" className="text-base font-medium text-foreground">
                                     Email Address <span className="text-primary">*</span>
                                 </Label>
                                 <div className="relative">
@@ -173,7 +173,7 @@ export default function WebinarRegistrationForm() {
 
                             {/* Phone Number */}
                             <div className="space-y-2">
-                                <Label htmlFor="phone" className="text-sm font-medium text-foreground">
+                                <Label htmlFor="phone" className="text-base font-medium text-foreground">
                                     Phone Number <span className="text-muted-foreground text-xs font-normal ml-1">(Optional)</span>
                                 </Label>
                                 <div className="relative">
@@ -214,7 +214,7 @@ export default function WebinarRegistrationForm() {
                                         className="overflow-hidden"
                                     >
                                         <div className="space-y-2 pb-1">
-                                            <Label htmlFor="organization" className="text-sm font-medium text-foreground">
+                                            <Label htmlFor="organization" className="text-base font-medium text-foreground">
                                                 Organization <span className="text-primary">*</span>
                                             </Label>
                                             <div className="relative">
