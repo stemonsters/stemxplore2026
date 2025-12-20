@@ -8,9 +8,9 @@ import { Heart } from "@nsmr/pixelart-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-background pt-8 md:pt-16 pb-8">
+        <footer className="bg-background pt-8 md:pt-6 pb-8 md:pb-4">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12 border-b border-border pb-8 md:pb-12">
+                <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-4 border-b border-border pb-8 md:pb-6">
                     {/* Brand & Contact */}
                     <div className="col-span-1 md:col-span-2">
                         <Link href="https://stemonsters.com" target="_blank" rel="noopener noreferrer" className="flex items-center mb-4 md:mb-6">
@@ -51,7 +51,7 @@ export default function Footer() {
                             <Link href="https://www.facebook.com/STEMonstersClub" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
                                 <Facebook className="w-5 h-5" />
                             </Link>
-                            <Link href="https://www.linkedin.com/company/stemonsters/" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
+                            <Link href="https://www.linkedin.com/showcase/stemxplore/" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
                                 <Linkedin className="w-5 h-5" />
                             </Link>
                             <Link href="https://www.instagram.com/STEMonstersClub/" target="_blank" rel="noopener noreferrer" className="p-2 border border-border hover:border-primary hover:text-primary transition-colors">
@@ -61,8 +61,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-xs font-mono gap-4 text-center md:text-left">
-                    <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+                <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm font-mono gap-4 text-center md:text-left">
+                    <div className="flex flex-col md:flex-row gap-2 items-center">
                         <p>© 2026 Stemonsters Education Pvt. Ltd.</p>
                         <p className="hidden md:block">|</p>
                         <p>All Rights Reserved</p>

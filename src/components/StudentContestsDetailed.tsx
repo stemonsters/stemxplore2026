@@ -62,26 +62,26 @@ export default function StudentContestsDetailed() {
                     </ScrollReveal>
 
                     {/* Right Column: Tabs */}
-                    <ScrollReveal className="w-full" delay={0.1}>
+                    <ScrollReveal className="w-full min-w-0" delay={0.1}>
                         <Tabs defaultValue="junior-hackathon" className="w-full">
-                            <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
+                            <TabsList className="w-full flex overflow-x-auto h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                 <TabsTrigger
                                     value="junior-hackathon"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                    className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Jr. Hackathon
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="lets-talk-stem"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                    className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Let&apos;s Talk STEM
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="tech-story"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                    className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
-                                    Story Behind Tech
+                                    Story Behind My Tech
                                 </TabsTrigger>
                             </TabsList>
 
@@ -126,15 +126,15 @@ export default function StudentContestsDetailed() {
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>72-Hour Innovation Sprint:</strong> Prototypes must be uploaded by March 11, 2026.</span>
+                                            <span><strong>Round 1:</strong> Submit your Scratch Code & Video by March 11, 2026.</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Digital Prototype:</strong> A functional Scratch Code Link.</span>
+                                            <span><strong>Round 2:</strong> The projects will be judged by our expert panel.</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Innovation Narrative:</strong> Short video explanation of logic and real-world impact.</span>
+                                            <span><strong>Round 3:</strong> Finalists showcase their solution LIVE in front of the audience and judges.</span>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -169,19 +169,24 @@ export default function StudentContestsDetailed() {
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                                        Topic: <strong>&quot;Learning in the Age of AI: Efficiency vs. Ability&quot;</strong>. <br />
                                         <span className="text-lg mt-2 block text-muted-foreground/80">
                                             The 2030 Horizon: In the pursuit of the ultimate AI-efficiency, how essential is it to protect &apos;Human Ability&apos;? What is Human Ability after all?
-                                        </span>
+                                        </span><br />
+                                        Topic: <strong>&quot;Learning in the Age of AI: Efficiency vs. Ability&quot;</strong>.
+
                                     </p>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Round 1 Deadline: Feb 20th
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 1:</strong> Upload a 3-min video of your talk on the topic, using the link shared via email.</span>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Finals: 7 Finalists Present Live
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 2:</strong> Get shortlisted by our expert judges.</span>
+                                        </div>
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 3:</strong> Present your 3-min LIVE Talk on March 8, 2026!</span>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -219,17 +224,17 @@ export default function StudentContestsDetailed() {
                                         Themes: <strong>&quot;Solutions for Water-Resilient Communities&quot;</strong> or <strong>&quot;Engineering Energy-Efficient Schools&quot;</strong>.
                                     </p>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Round 1 Deadline: Feb 20th
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 1:</strong> Submit your project as per the guidelines shared over email.</span>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Scientific Model / Arduino / App
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 2:</strong> The projects will be judged by our expert panel.</span>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Finals: 3 Winners (Online) / 6 Finalists (Offline)
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Round 3:</strong> Winners showcase their project LIVE in front of the audience and judges.</span>
                                         </div>
                                     </div>
                                 </TabsContent>

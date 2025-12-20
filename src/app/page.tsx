@@ -40,8 +40,10 @@ export default function Home() {
       <SchoolRegistration />
       <Support />
       <StudentRegistration />
-      <PastEditions />
-      <Footer />
+      <div className="flex flex-col md:min-h-[calc(100vh-4rem)]">
+        <PastEditions />
+        <Footer />
+      </div>
     </main>
   );
 }

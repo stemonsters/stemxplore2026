@@ -69,25 +69,25 @@ export default function Support() {
                     </ScrollReveal>
 
                     {/* Right Side: How to Support Tabs */}
-                    <ScrollReveal className="w-full" delay={0.1}>
+                    <ScrollReveal className="w-full min-w-0" delay={0.1}>
                         <div>
                             <Tabs defaultValue="sponsor" className="w-full">
-                                <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
+                                <TabsList className="w-full flex overflow-x-auto h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                     <TabsTrigger
                                         value="sponsor"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                        className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Sponsor
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="gifting"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                        className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Partner
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="merch"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
+                                        className="min-w-fit flex-1 whitespace-nowrap rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Merch
                                     </TabsTrigger>

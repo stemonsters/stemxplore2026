@@ -29,21 +29,23 @@ export default function PastEditions() {
 
     const galleryData: Record<string, { type: 'image' | 'video', url: string, title: string }[]> = {
         "Panel Discussion": [
+            { type: 'video', url: 'https://www.youtube.com/embed/TDjDY0IgGPc?si=wXsXxKh9Y3GgS2aT', title: 'STEMXplore 2025' },
             { type: 'video', url: 'https://www.youtube.com/embed/Orn7C5OxG4s?si=r-hSJkRUL9P8QKyO', title: 'STEMXplore 2024' },
+            { type: 'video', url: 'https://www.youtube.com/embed/vhvje7JApF4?si=TwZvFuOlCcksedhq', title: 'STEMXplore 2023' },
             { type: 'image', url: '/images/past-editions/webinar-2025.jpg', title: 'STEMXplore 2025' },
             { type: 'image', url: '/images/past-editions/webinar-2022.jpg', title: 'STEMXplore 2022' },
-            { type: 'image', url: '/images/past-editions/expert-panel-2025.jpg', title: 'STEMXplore 2025' },
         ],
         "Story Behind My Tech": [
             { type: 'video', url: 'https://www.youtube.com/embed/4PTz8L9y-GA', title: 'STEMXplore 2025' },
             { type: 'video', url: 'https://www.youtube.com/embed/hD_jAvR8-Po', title: 'STEMXplore 2025' },
             { type: 'video', url: 'https://www.youtube.com/embed/QxQ3_jX6br8', title: 'STEMXplore 2025' },
-            { type: 'image', url: '/images/past-editions/arduino-lock-2025.png', title: 'STEMXplore 2025' },
         ],
         "STEM Lab Challenge": [
             { type: 'image', url: '/images/past-editions/stem-lab-1.jpg', title: 'STEMXplore 2025' },
-            { type: 'image', url: '/images/past-editions/stem-lab-2.png', title: 'STEMXplore 2024' },
+            { type: 'image', url: '/images/past-editions/stem-lab-2.png', title: 'STEMXplore 2025' },
             { type: 'image', url: '/images/past-editions/stem-lab-3.jpg', title: 'STEMXplore 2025' },
+            { type: 'image', url: '/images/past-editions/stem-lab-fractals-2024.png', title: 'STEMXplore 2024' },
+            { type: 'image', url: '/images/past-editions/stem-lab-mars-2023.png', title: 'STEMXplore 2023' },
         ],
         "Lets Talk STEM": [
             { type: 'video', url: 'https://www.youtube.com/embed/d7r2g0KmOd0?si=h_MizcHtJtt9JCLx', title: 'STEMXplore 2025' },
@@ -56,12 +58,12 @@ export default function PastEditions() {
     };
 
     return (
-        <section id="past-editions" className="py-12 md:py-16 bg-muted/50 border-t border-b border-border relative overflow-hidden">
+        <section id="past-editions" className="py-12 md:py-8 bg-muted/50 border-t border-b border-border relative overflow-hidden md:flex-1 md:flex md:flex-col md:justify-center">
             {/* Background elements */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:32px_32px]" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <ScrollReveal className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-4">
+                <ScrollReveal className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-8 gap-4">
                     <div>
                         <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-none bg-primary/10 text-xs font-semibold text-primary uppercase tracking-[0.2em] border border-primary/20">
                             Archives
@@ -146,7 +148,7 @@ export default function PastEditions() {
 
                             {/* Modal Content - Gallery Grid */}
                             <div className="flex-1 overflow-y-auto p-4 md:p-10 custom-scrollbar overscroll-contain">
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+                                <div className="flex flex-wrap justify-center gap-4 md:gap-8">
                                     {galleryData[selectedEdition]?.map((item, i) => (
                                         <GalleryItem
                                             key={i}
@@ -237,7 +239,7 @@ function GalleryItem({ item, onMediaClick }: {
     return (
         <div
             onClick={() => onMediaClick(item)}
-            className="group relative bg-muted aspect-video overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 shadow-sm cursor-pointer"
+            className="group relative bg-muted aspect-video overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 shadow-sm cursor-pointer w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
         >
             {item.type === 'video' ? (
                 <div className="w-full h-full relative">
