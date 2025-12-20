@@ -67,19 +67,19 @@ export default function StudentContestsDetailed() {
                             <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                 <TabsTrigger
                                     value="junior-hackathon"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Jr. Hackathon
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="lets-talk-stem"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Let&apos;s Talk STEM
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="tech-story"
-                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                    className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                 >
                                     Story Behind Tech
                                 </TabsTrigger>

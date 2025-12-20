@@ -75,19 +75,19 @@ export default function Support() {
                                 <TabsList className="grid w-full grid-cols-3 h-auto p-0 bg-transparent mb-8 rounded-none gap-0">
                                     <TabsTrigger
                                         value="sponsor"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Sponsor
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="gifting"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Partner
                                     </TabsTrigger>
                                     <TabsTrigger
                                         value="merch"
-                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-xs md:text-base font-medium text-muted-foreground transition-all"
+                                        className="rounded-none border-b-2 border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-4 text-sm md:text-base font-medium text-muted-foreground transition-all"
                                     >
                                         Merch
                                     </TabsTrigger>
