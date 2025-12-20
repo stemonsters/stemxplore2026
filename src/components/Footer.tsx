@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Heart } from "@nsmr/pixelart-react";
-import { ModeToggle } from "@/components/mode-toggle";
+
 
 export default function Footer() {
     return (
@@ -61,13 +61,13 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-muted-foreground text-xs font-mono gap-4">
-                    <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center">
+                <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-xs font-mono gap-4 text-center md:text-left">
+                    <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
                         <p>© 2026 Stemonsters Education Pvt. Ltd.</p>
                         <p className="hidden md:block">|</p>
                         <p>All Rights Reserved</p>
                     </div>
-                    <div className="flex items-center justify-between w-full md:w-auto gap-4">
+                    <div className="flex items-center justify-center w-full md:w-auto gap-4">
                         <div className="flex items-center gap-1">
                             <span>Made with</span>
                             <Heart className="w-3 h-3 text-accent" />
@@ -76,7 +76,6 @@ export default function Footer() {
                                 Tahcin
                             </Link>
                         </div>
-                        <ModeToggle />
                     </div>
                 </div>
             </div>

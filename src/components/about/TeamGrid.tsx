@@ -1,26 +1,30 @@
-
-import { User, Linkedin, Twitter, Mail } from "lucide-react";
+import { User, Linkedin } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const teamMembers = [
     {
         name: "Dr. Sonali Dasgupta",
-        role: "Founder & Director",
-        bio: "Ph.D. in Physics with 15+ years of experience in STEM education and curriculum design.",
-        tags: ["Visionary", "Educator"]
+        image: "/images/Team/sonali-dasgupta.webp",
+        bio: "Founder @ STEMonsters | Building a better future, one STEM at a time.",
+        linkedin: "https://www.linkedin.com/in/sonalidasgupta/",
+    },
+    {
+        name: "Sowjanya Madirazu",
+        bio: "Curating and managing educational content to ensure high-quality STEM experiences.",
     },
     {
         name: "Tahcin Sarwar",
-        role: "Head of Technology",
-        bio: "Tech enthusiast ensuring seamless digital experiences for our virtual platforms.",
-        tags: ["Tech Lead", "Innovator"]
+        image: "/images/Team/tahcin.png",
+        bio: "Tech nerd doing a business major.",
+        linkedin: "https://www.linkedin.com/in/tahcinsarwar/",
     },
     {
-        name: "Akshaya",
-        role: "Community Manager",
-        bio: "Building bridges between schools, parents, and mentors to foster a supportive community.",
-        tags: ["Community", "Outreach"]
+        name: "Akshaya Kadambi",
+        image: "/images/Team/akshaya-kadambi.jpg",
+        bio: "Intern | Creative by instinct, electrical engineer by choice.",
+        linkedin: "https://www.linkedin.com/in/akshaya-kadambi-reachout/",
     }
 ];
 
@@ -35,47 +39,43 @@ export default function TeamGrid() {
                     </p>
                 </ScrollReveal>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {teamMembers.map((member, index) => (
                         <ScrollReveal key={index} className="group relative bg-card h-full" delay={0.1 + index * 0.1}>
                             <div className="border border-border hover:border-primary/50 transition-colors p-6 rounded-xl flex flex-col items-center text-center h-full">
 
-                                {/* Avatar Placeholder */}
-                                <div className="w-24 h-24 mb-6 relative">
-                                    <div className="absolute inset-0 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors" />
-                                    <div className="absolute inset-2 bg-background rounded-full flex items-center justify-center border border-border">
-                                        <User className="w-10 h-10 text-muted-foreground group-hover:text-primary transition-colors" />
+                                {/* Member Image / Avatar */}
+                                <div className="w-32 h-32 mb-8 relative flex items-center justify-center border-4 border-primary rounded-full p-0.5">
+                                    <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
+                                        {member.image ? (
+                                            <Image
+                                                src={member.image}
+                                                alt={member.name}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        ) : (
+                                            <div className="w-full h-full flex items-center justify-center bg-muted/30">
+                                                <User className="w-12 h-12 text-muted-foreground" />
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                                <p className="text-primary font-medium text-sm mb-4">{member.role}</p>
+                                <h3 className="text-xl font-bold mb-4">{member.name}</h3>
 
                                 <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
                                     {member.bio}
                                 </p>
 
-                                {/* Tags */}
-                                <div className="flex flex-wrap gap-2 justify-center mb-6">
-                                    {member.tags.map(tag => (
-                                        <span key={tag} className="px-2 py-0.5 bg-accent/5 text-accent text-[10px] uppercase tracking-wider font-medium rounded-full border border-accent/10">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-
                                 {/* Socials */}
-                                <div className="flex gap-4 pt-4 border-t border-border w-full justify-center">
-                                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                        <Linkedin className="w-4 h-4" />
-                                    </Link>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                        <Twitter className="w-4 h-4" />
-                                    </Link>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                                        <Mail className="w-4 h-4" />
-                                    </Link>
-                                </div>
+                                {member.linkedin && (
+                                    <div className="flex gap-4 pt-4 border-t border-border w-full justify-center">
+                                        <Link href={member.linkedin} target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+                                            <Linkedin className="w-4 h-4" />
+                                        </Link>
+                                    </div>
+                                )}
                             </div>
                         </ScrollReveal>
                     ))}
@@ -84,3 +84,4 @@ export default function TeamGrid() {
         </section>
     );
 }
+

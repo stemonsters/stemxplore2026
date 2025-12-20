@@ -22,17 +22,17 @@ export default function EventBlocks() {
         {
             title: "Let's Talk STEM",
             icon: <MessageSquare className="w-5 h-5" />,
-            description: "\"Science is not necessary when we have AI\"",
+            description: "Efficiency vs. Ability in the Age of AI.",
         },
         {
             title: "Story Behind My Tech",
             icon: <BookOpen className="w-5 h-5" />,
-            description: "Water sustainability solutions.",
+            description: "Solutions for Water & Energy Efficiency.",
         },
         {
             title: "Junior Hackathon",
             icon: <Code className="w-5 h-5" />,
-            description: "Scratch programming - 72 hours.",
+            description: "Guardians of Water: Scratch Hackathon.",
         },
     ];
 

@@ -16,7 +16,7 @@ const scheduleData = [
             },
             {
                 time: "10:30 AM - 11:30 AM IST",
-                title: "Junior Hackathon - Scratch Finals",
+                title: "Guardians of Water: Jr. Hackathon",
                 type: "Contest",
             },
             {

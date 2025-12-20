@@ -29,8 +29,8 @@ export default function StudentContestsDetailed() {
                                     <span className="text-primary font-bold">1</span>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-foreground text-xl mb-1">Present to Experts</h3>
-                                    <p className="text-lg md:text-xl leading-relaxed">Finalists will present submissions to distinguished judges from top institutions.</p>
+                                    <h3 className="font-bold text-foreground text-xl mb-1">Engage with Experts</h3>
+                                    <p className="text-lg md:text-xl leading-relaxed">Finalists will present submissions to distinguished judges and receive feedback.</p>
                                 </div>
                             </div>
 
@@ -49,7 +49,7 @@ export default function StudentContestsDetailed() {
                                     <span className="text-primary font-bold">3</span>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-foreground text-xl mb-1">Open for All</h3>
+                                    <h3 className="font-bold text-foreground text-xl mb-1">Open to All</h3>
                                     <p className="text-lg md:text-xl leading-relaxed">Inclusive participation with dedicated Q&A sessions.</p>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ export default function StudentContestsDetailed() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-2xl font-bold">Junior Hackathon - Scratch</h3>
+                                    <h3 className="text-2xl font-bold">Guardians of Water: A Junior Coding Challenge</h3>
                                     <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-base text-muted-foreground">
                                         <div className="flex items-center gap-2">
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,37 +100,41 @@ export default function StudentContestsDetailed() {
                                                 <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                             </svg>
-                                            <span className="font-semibold">Grades 3-5</span>
+                                            <span className="font-semibold text-foreground">Grades 3-6</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                             </svg>
-                                            <span className="font-semibold">March 8, 2026</span>
+                                            <span className="font-semibold text-foreground">Starts March 8, 2026</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
-                                            <span className="font-semibold">10:30 AM - 11:30 AM IST</span>
+                                            <span className="font-semibold text-foreground">10:30 AM IST</span>
                                         </div>
                                     </div>
-                                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                                        Theme: <strong>&quot;Reduce Reuse Recycle&quot;</strong>.
-                                        Quiz + Hackathon format.
-                                    </p>
+                                    <div className="space-y-4">
+                                        <p className="text-lg text-muted-foreground leading-relaxed">
+                                            <strong>Format:</strong> The Dual-Phase Challenge: Sustainability IQ Quiz followed by a Coding Hackathon on Scratch.
+                                        </p>
+                                        <p className="text-lg text-muted-foreground leading-relaxed">
+                                            <strong>The Mission:</strong> Students will build code-based solutions for water scarcity, awareness, and circular water management.
+                                        </p>
+                                    </div>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Submission: Within 72 Hours
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>72-Hour Innovation Sprint:</strong> Prototypes must be uploaded by March 11, 2026.</span>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Deliverables: Code Link + Video Explanation
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Digital Prototype:</strong> A functional Scratch Code Link.</span>
                                         </div>
-                                        <div className="flex items-center gap-2">
-                                            <span className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                            Platform: Scratch
+                                        <div className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
+                                            <span><strong>Innovation Narrative:</strong> Short video explanation of logic and real-world impact.</span>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -165,7 +169,10 @@ export default function StudentContestsDetailed() {
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                                        Present your perspective on the thought-provoking topic: <strong>&quot;Science is not necessary when we have AI&quot;</strong>.
+                                        Topic: <strong>&quot;Learning in the Age of AI: Efficiency vs. Ability&quot;</strong>. <br />
+                                        <span className="text-lg mt-2 block text-muted-foreground/80">
+                                            The 2030 Horizon: In the pursuit of the ultimate AI-efficiency, how essential is it to protect &apos;Human Ability&apos;? What is Human Ability after all?
+                                        </span>
                                     </p>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-center gap-2">
@@ -209,7 +216,7 @@ export default function StudentContestsDetailed() {
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                                        Innovative solutions for <strong>&quot;Water Sustainability&quot;</strong> or <strong>&quot;Energy Efficient Solutions&quot;</strong>.
+                                        Themes: <strong>&quot;Solutions for Water-Resilient Communities&quot;</strong> or <strong>&quot;Engineering Energy-Efficient Schools&quot;</strong>.
                                     </p>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-center gap-2">

@@ -8,9 +8,12 @@ import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export default function SchoolRegistration() {
-    const schools = Array(5).fill([
+    const schools = Array(4).fill([
         "kerela-public-school-logo.png",
-        "sparklingmindz-logo.png"
+        "sparklingmindz-logo.png",
+        "legacy-school-logo.png",
+        "kunskapsfolan-logo.png",
+        "candor-school-logo.jpg"
     ]).flat();
     const [isPaused, setIsPaused] = useState(false);
 
@@ -37,9 +40,11 @@ export default function SchoolRegistration() {
                         className="shrink-0"
                         delay={0.1}
                     >
-                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-14 text-lg rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                            Know More
-                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-14 text-lg rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
+                            <a href="https://api.whatsapp.com/send?phone=919741165171&text=Hello!%20I%20want%20to%20register%20my%20school%20for%20STEMXplore%202026." target="_blank" rel="noopener noreferrer">
+                                Know More
+                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            </a>
                         </Button>
                     </ScrollReveal>
                 </div>
@@ -48,7 +53,7 @@ export default function SchoolRegistration() {
                 <ScrollReveal className="mt-20" delay={0.2}>
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                            Our Partner Schools
+                            Past Partner Schools
                         </h3>
                     </div>
 
@@ -58,7 +63,7 @@ export default function SchoolRegistration() {
 
                         <div
                             className="flex gap-8 items-center animate-scroll group-hover:[animation-play-state:paused]"
-                            style={{ width: "fit-content", animationDuration: "20s" }}
+                            style={{ width: "fit-content", animationDuration: "60s" }}
                         >
                             {/* First set of schools */}
                             {schools.map((school, index) => (

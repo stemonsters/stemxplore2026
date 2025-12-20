@@ -1,7 +1,7 @@
 "use client";
 
 
-import { Brain, Cpu, Atom, User, ArrowRight } from "lucide-react";
+import { Brain, Cpu, Settings, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -25,8 +25,8 @@ export default function FeaturedEvent() {
                         </div>
 
                         <h2 className="text-3xl md:text-5xl font-medium mb-8 leading-tight tracking-tight">
-                            "Learning For Careers/ <br />
-                            <span className="text-primary">Life In 2030</span>"
+                            "The 2030 Horizon and Beyond: <br />
+                            <span className="text-primary mt-2 block">Skills, Mindsets, and Learning"</span>
                         </h2>
                         <div className="flex flex-wrap items-center gap-3 md:gap-4">
                             <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary text-base font-medium border border-primary/20">
@@ -41,9 +41,9 @@ export default function FeaturedEvent() {
                             </span>
                         </div>
 
-                        {/* Decorative Element */}
+                        {/* Decorative Element - Gear */}
                         <div className="absolute -z-10 -top-20 -left-20 opacity-[0.05] pointer-events-none">
-                            <Atom className="w-96 h-96 text-primary" />
+                            <Settings className="w-96 h-96 text-primary animate-[spin_30s_linear_infinite]" />
                         </div>
                     </ScrollReveal>
 
@@ -59,19 +59,19 @@ export default function FeaturedEvent() {
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Brain className="w-6 h-6" />
                                     </div>
-                                    <span className="text-base md:text-lg">Upskilling</span>
+                                    <span className="text-base md:text-lg">Skills</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
                                         <Cpu className="w-6 h-6" />
                                     </div>
-                                    <span className="text-base md:text-lg">2030 Careers</span>
+                                    <span className="text-base md:text-lg">Careers</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-2 rounded-lg bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
-                                        <Atom className="w-6 h-6" />
+                                        <Brain className="w-6 h-6" />
                                     </div>
-                                    <span className="text-base md:text-lg">Lifelong Learning</span>
+                                    <span className="text-base md:text-lg">Human Intelligence</span>
                                 </div>
                             </div>
 

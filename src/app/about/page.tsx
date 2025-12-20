@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us | STEMXplore 2026",
+    description: "Learn about the mission, our story, and the passionate team behind STEMXplore 2026.",
+    alternates: {
+        canonical: "/about",
+    },
+};
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AboutHero from "@/components/about/AboutHero";
