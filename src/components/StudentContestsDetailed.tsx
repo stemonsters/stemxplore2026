@@ -126,15 +126,15 @@ export default function StudentContestsDetailed() {
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 1:</strong> Submit your Scratch Code & Video by March 11, 2026.</span>
+                                            <span><strong>Round 1:</strong> Attend LIVE Sustainability IQ Quiz on 8th March 2026</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 2:</strong> The projects will be judged by our expert panel.</span>
+                                            <span><strong>Round 2:</strong> Receive submission details/ links for the Coding Hackathon</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 3:</strong> Finalists showcase their solution LIVE in front of the audience and judges.</span>
+                                            <span><strong>Round 3:</strong> Hack, Build and Submit your Scratch Code within 72 hours</span>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -221,20 +221,37 @@ export default function StudentContestsDetailed() {
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                                        Themes: <strong>&quot;Solutions for Water-Resilient Communities&quot;</strong> or <strong>&quot;Engineering Energy-Efficient Schools&quot;</strong>.
+                                        Theme: <strong>&quot;Engineering Energy-Efficient Schools&quot;</strong>.
                                     </p>
+                                    <div className="space-y-1 text-base text-muted-foreground bg-primary/5 p-4 border-l-4 border-primary/30">
+                                        <p className="font-semibold mb-2 text-foreground">Build your solution using any of these platforms:</p>
+                                        <ul className="grid grid-cols-1 gap-1">
+                                            <li className="flex items-center gap-2">
+                                                <ChevronRight className="w-4 h-4 text-primary shrink-0" />
+                                                <span>Science-based working model</span>
+                                            </li>
+                                            <li className="flex items-center gap-2">
+                                                <ChevronRight className="w-4 h-4 text-primary shrink-0" />
+                                                <span>App Design</span>
+                                            </li>
+                                            <li className="flex items-center gap-2">
+                                                <ChevronRight className="w-4 h-4 text-primary shrink-0" />
+                                                <span>Arduino based project</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div className="grid grid-cols-1 gap-3 text-base text-muted-foreground pt-4 border-t border-border/50">
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 1:</strong> Submit your project as per the guidelines shared over email.</span>
+                                            <span><strong>Round 1:</strong> Submit your project as per the guidelines shared over email</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 2:</strong> The projects will be judged by our expert panel.</span>
+                                            <span><strong>Round 2:</strong> The projects will be judged by our expert panel</span>
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 3:</strong> Winners showcase their project LIVE in front of the audience and judges.</span>
+                                            <span><strong>Round 3:</strong> Shortlisted participants will showcase their project LIVE in front of the audience and judges</span>
                                         </div>
                                     </div>
                                 </TabsContent>

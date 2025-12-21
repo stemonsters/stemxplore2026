@@ -27,7 +27,7 @@ export default function EventBlocks() {
         {
             title: "Story Behind My Tech",
             icon: <BookOpen className="w-5 h-5" />,
-            description: "Solutions for Water & Energy Efficiency.",
+            description: "Engineering Energy-Efficient Schools.",
         },
         {
             title: "Junior Hackathon",

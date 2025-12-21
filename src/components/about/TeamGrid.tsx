@@ -12,7 +12,8 @@ const teamMembers = [
     },
     {
         name: "Sowjanya Madirazu",
-        bio: "Curating and managing educational content to ensure high-quality STEM experiences.",
+        image: "/images/Team/sowjanya.jpg",
+        bio: "Educator @ STEMonsters",
     },
     {
         name: "Tahcin Sarwar",
@@ -52,7 +53,7 @@ export default function TeamGrid() {
                                                 src={member.image}
                                                 alt={member.name}
                                                 fill
-                                                className="object-cover"
+                                                className={`object-cover ${member.name === "Sowjanya Madirazu" ? "scale-[1.35] origin-center" : ""}`}
                                             />
                                         ) : (
                                             <div className="w-full h-full flex items-center justify-center bg-muted/30">
