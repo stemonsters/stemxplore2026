@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { BackToTop } from "@/components/BackToTop";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
 });
-
-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://stemxplore2026.stemonsters.com"),
@@ -60,6 +59,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <BackToTop />
         </ThemeProvider>
       </body>
     </html>
