@@ -67,14 +67,14 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 md:mb-12">
-                            <Button asChild className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 h-auto rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                                <a href="#about">
-                                    Learn More <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            <Button asChild className="w-full sm:w-48 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 h-auto rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
+                                <a href="#register">
+                                    Register Now <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </a>
                             </Button>
-                            <Button asChild variant="outline" className="w-full sm:w-auto px-6 py-3 h-auto rounded-none border-2 border-muted-foreground/20 hover:border-primary hover:text-primary hover:bg-primary/5">
-                                <a href="#schedule">
-                                    View Schedule
+                            <Button asChild variant="outline" className="w-full sm:w-48 px-6 py-3 h-auto rounded-none border-2 border-muted-foreground/20 hover:border-primary hover:text-primary hover:bg-primary/5">
+                                <a href="#about">
+                                    Know More
                                 </a>
                             </Button>
                         </div>
