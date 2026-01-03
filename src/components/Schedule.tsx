@@ -10,24 +10,21 @@ const scheduleData = [
         title: "Mar 8, 2026",
         events: [
             {
-                time: "10:00 AM - 10:15 AM IST",
-                title: "Welcome Address",
+                time: "10:00 AM IST",
+                title: "Welcome Address by Dr. Sonali Dasgupta",
                 type: "Opening",
             },
             {
-                time: "10:30 AM - 11:30 AM IST",
-                title: "Guardians of Water: Jr. Hackathon",
+                time: "10:30 AM IST",
+                title: "Junior Hackathon | Grades 3 - 5",
+                description: "Scratch Based Coding Contest",
                 type: "Contest",
             },
             {
-                time: "11:45 AM - 12:30 PM IST",
-                title: "Let's Talk STEM - Finals",
+                time: "11:45 AM IST",
+                title: "Let's Talk STEM | Grades 7 - 12",
+                description: "3 - Minute STEM Talks - Finale",
                 type: "Contest",
-            },
-            {
-                time: "07:00 PM - 08:00 PM IST",
-                title: "Panel Discussion",
-                type: "Panel",
             },
         ],
     },
@@ -35,8 +32,15 @@ const scheduleData = [
         title: "Mar 15, 2026",
         events: [
             {
-                time: "11:00 AM IST",
-                title: "Story Behind My Tech - Finals",
+                time: "10:30 AM IST",
+                title: "Expert Panel Discussion",
+                description: "Topic: The 2030 Horizon and Beyond",
+                type: "Panel",
+            },
+            {
+                time: "12:00 noon IST",
+                title: "Story Behind My Tech | Grades 7 - 12",
+                description: "\"Engineering Energy Efficient Communities\"",
                 type: "Contest",
             },
         ],
@@ -60,7 +64,12 @@ export default function Schedule() {
                                     {event.type}
                                 </Badge>
                             </div>
-                            <h4 className="text-lg md:text-xl font-bold text-foreground leading-snug">{event.title}</h4>
+                            <div className="space-y-1">
+                                <h4 className="text-lg md:text-xl font-bold text-foreground leading-snug">{event.title}</h4>
+                                {event.description && (
+                                    <p className="text-sm md:text-base text-muted-foreground">{event.description}</p>
+                                )}
+                            </div>
                         </CardContent>
                     </Card>
                 ))}

@@ -7,9 +7,9 @@ import { Users, Lightbulb, MessageSquare, BookOpen, Trophy, Code, Cpu } from "lu
 export default function EventBlocks() {
     const leftColumnEvents = [
         {
-            title: "Panel Discussion",
+            title: "Expert Panel Discussion",
             icon: <Users className="w-5 h-5" />,
-            description: "Can AI improve cognitive skills without emotional skills?",
+            description: "Topic: The 2030 Horizon and Beyond",
         },
         {
             title: "Keynote Speech",
@@ -22,17 +22,17 @@ export default function EventBlocks() {
         {
             title: "Let's Talk STEM",
             icon: <MessageSquare className="w-5 h-5" />,
-            description: "Efficiency vs. Ability in the Age of AI.",
+            description: "3 - Minute STEM Talks - Finale",
         },
         {
             title: "Story Behind My Tech",
             icon: <BookOpen className="w-5 h-5" />,
-            description: "Engineering Energy-Efficient Schools.",
+            description: "Engineering Energy Efficient Communities",
         },
         {
             title: "Junior Hackathon",
             icon: <Code className="w-5 h-5" />,
-            description: "Guardians of Water: Scratch Hackathon.",
+            description: "Scratch Based Coding Contest",
         },
     ];
 
