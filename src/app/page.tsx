@@ -15,6 +15,8 @@ import EventBlocks from "@/components/EventBlocks";
 import FeaturedEvent from "@/components/FeaturedEvent";
 
 import StudentContestsDetailed from "@/components/StudentContestsDetailed";
+import ImportantDates from "@/components/ImportantDates";
+import ApplicationSteps from "@/components/ApplicationSteps";
 import Schedule from "@/components/Schedule";
 import About from "@/components/About";
 import SchoolRegistration from "@/components/SchoolRegistration";
@@ -31,6 +33,8 @@ export default function Home() {
       <Header />
       <Hero />
       <StudentContestsHighlight />
+      <ImportantDates />
+      <ApplicationSteps />
 
       <FeaturedEvent />
       <StudentContestsDetailed />

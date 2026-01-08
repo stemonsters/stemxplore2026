@@ -12,7 +12,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://stemxplore2026.stemonsters.com"),
   title: "STEMXplore 2026 | National Science Day Symposium",
-  description: "A 2-day mega virtual event to celebrate science and hands-on learning!",
+  description: "A 2-day mega event celebrating science and hands-on learning: starting virtually and concluding at IISc Bangalore!",
   alternates: {
     canonical: "/",
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "STEMXplore 2026 | National Science Day Symposium",
-    description: "A 2-day mega virtual event to celebrate science and hands-on learning!",
+    description: "A 2-day mega event celebrating science and hands-on learning: starting virtually and concluding at IISc Bangalore!",
     url: "https://stemxplore2026.stemonsters.com",
     siteName: "STEMXplore",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "STEMXplore 2026 | National Science Day Symposium",
-    description: "A 2-day mega virtual event to celebrate science and hands-on learning!",
+    description: "A 2-day mega event celebrating science and hands-on learning: starting virtually and concluding at IISc Bangalore!",
     images: ["/og-image.png"],
   },
 };

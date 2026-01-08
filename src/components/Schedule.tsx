@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const scheduleData = [
     {
         title: "Mar 8, 2026",
+        location: "Virtual",
         events: [
             {
                 time: "10:00 AM IST",
@@ -30,6 +31,7 @@ const scheduleData = [
     },
     {
         title: "Mar 15, 2026",
+        location: "IISc Bangalore",
         events: [
             {
                 time: "10:30 AM IST",
@@ -49,7 +51,14 @@ const scheduleData = [
 
 export default function Schedule() {
     const timelineData = scheduleData.map((day) => ({
-        title: day.title,
+        title: (
+            <div className="flex flex-col gap-1">
+                <span className="text-xl md:text-2xl font-bold">{day.title}</span>
+                <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors uppercase tracking-widest text-[10px] py-0.5">
+                    {day.location}
+                </Badge>
+            </div>
+        ),
         content: (
             <div className="space-y-6">
                 {day.events.map((event, index) => (

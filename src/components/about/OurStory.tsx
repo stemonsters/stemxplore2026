@@ -20,7 +20,7 @@ export default function OurStory() {
                                     <div>
                                         <h3 className="font-bold text-lg mb-2">Virtual Symposium</h3>
                                         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                                            A comprehensive 2-day virtual event designed to celebrate National Science Day 2026.
+                                            A 2-day symposium starting with a virtual track and culminating in-person at IISc Bangalore.
                                         </p>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ export default function OurStory() {
 
                         <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
                             <p>
-                                <strong>STEMXplore 2026</strong> is a premier virtual symposium accessible to students across the nation. Our goal is simple: to celebrate India’s National Science Day through discovery, creativity, and practical application.
+                                <strong>STEMXplore 2026</strong> is a premier symposium starting with a virtual track for students across the nation and culminating in a grand finale at IISc Bangalore. Our goal is simple: to celebrate India’s National Science Day through discovery, creativity, and practical application.
                             </p>
                             <p>
                                 We believe that true learning happens beyond textbooks. This event provides a unique platform for young minds (Grades 3-12) to showcase their ideas, compete in hackathons, and engage with thought leaders in the field of STEM.

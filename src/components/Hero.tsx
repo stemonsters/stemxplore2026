@@ -35,7 +35,7 @@ function CountUp({ end, prefix = "", suffix = "", duration = 2000 }: { end: numb
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-0 overflow-hidden bg-background">
+        <section className="relative h-auto lg:h-screen flex items-center justify-center pt-20 pb-12 lg:pt-0 lg:pb-0 overflow-hidden bg-background">
             {/* Grid Background */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,var(--background))]" />
@@ -45,28 +45,70 @@ export default function Hero() {
                     <div
                         className="lg:col-span-7"
                     >
-                        {/* Hero Logo - visible initially */}
-                        <Image
-                            src="/images/stemxplore-logo.png"
-                            alt="STEMXplore 2026 Logo"
-                            width={180}
-                            height={180}
-                            className="h-24 md:h-32 w-auto mb-4 md:mb-6"
-                        />
+                        {/* Logo and Knowledge Partner Container */}
+                        <div className="flex items-center gap-4 md:gap-8 mb-4 md:mb-6">
+                            {/* Main Event Logo */}
+                            <Image
+                                src="/images/stemxplore-logo.png"
+                                alt="STEMXplore 2026 Logo"
+                                width={180}
+                                height={180}
+                                className="h-20 md:h-24 lg:h-28 w-auto"
+                            />
+
+                            {/* subtle divider */}
+                            <div className="h-12 w-px bg-border flex-shrink-0" />
+
+                            {/* Knowledge Partner section */}
+                            <div className="flex flex-col gap-1.5">
+                                <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground whitespace-nowrap">
+                                    Knowledge Partner
+                                </span>
+                                <Image
+                                    src="/images/ieee-pes-logo.png"
+                                    alt="IEEE PES Bangalore Chapter"
+                                    width={200}
+                                    height={200}
+                                    className="h-12 md:h-16 lg:h-20 w-auto object-contain"
+                                />
+                            </div>
+                        </div>
 
 
-                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
                             NATIONAL SCIENCE <br />
                             <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow">
                                 DAY SYMPOSIUM
                             </span>
                         </h1>
-
                         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 font-light border-l-2 border-accent pl-4 md:pl-6">
-                            A 2-day mega virtual event to celebrate science and hands-on learning.
+                            A 2-day mega event celebrating science and hands-on learning: starting virtually and concluding at IISc Bangalore.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 md:mb-12">
+                        {/* Mobile Version of IISc Image - shown between text and buttons with more height */}
+                        <div className="lg:hidden relative mb-8">
+                            <div className="relative h-[405px] sm:h-[505px] w-full overflow-hidden shadow-xl border-4 border-white">
+                                <Image
+                                    src="/images/iisc-bangalore.png"
+                                    alt="IISc Bangalore"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white/95 via-white/80 to-transparent pt-16 pb-4 px-6 text-center">
+                                    <div className="relative z-10">
+                                        <p className="text-primary font-bold text-[14px] uppercase tracking-wider opacity-90 mb-1">
+                                            Your registration can lead you to
+                                        </p>
+                                        <h3 className="text-primary font-bold text-2xl uppercase whitespace-nowrap">
+                                            IISc Bangalore
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 md:mb-8">
                             <Button asChild className="w-full sm:w-48 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 h-auto rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
                                 <a href="#register">
                                     Register Now <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -104,53 +146,23 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-5 hidden lg:block relative">
-                        <div className="grid grid-cols-2 gap-6 mt-[60px]">
-                            {/* Column 1 - Staggered Down */}
-                            <div className="space-y-6 pt-12">
-                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10 flex flex-col items-center text-center">
-                                        <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
-                                            <School className="w-7 h-7 text-primary" />
-                                        </div>
-                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={10} suffix="+" /></div>
-                                        <div className="text-sm text-muted-foreground font-medium">Cities and Schools</div>
-                                    </div>
-                                </div>
-                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10 flex flex-col items-center text-center">
-                                        <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
-                                            <Globe className="w-7 h-7 text-accent" />
-                                        </div>
-                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={2000} suffix="+" /></div>
-                                        <div className="text-sm text-muted-foreground font-medium">Community</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Column 2 - Normal Position */}
-                            <div className="space-y-6">
-                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-accent/30 hover:border-accent transition-all duration-300 group shadow-lg shadow-accent/5 hover:shadow-accent/20 hover:shadow-xl">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10 flex flex-col items-center text-center">
-                                        <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-accent/20">
-                                            <Users className="w-7 h-7 text-accent" />
-                                        </div>
-                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={1000} suffix="+" /></div>
-                                        <div className="text-sm text-muted-foreground font-medium">Participants</div>
-                                    </div>
-                                </div>
-                                <div className="relative p-6 bg-card/50 backdrop-blur-md border-2 border-primary/30 hover:border-primary transition-all duration-300 group shadow-lg shadow-primary/5 hover:shadow-primary/20 hover:shadow-xl">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <div className="relative z-10 flex flex-col items-center text-center">
-                                        <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/20">
-                                            <Trophy className="w-7 h-7 text-primary" />
-                                        </div>
-                                        <div className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--primary),var(--accent),var(--primary),var(--accent),var(--primary))] animate-gradient-flow"><CountUp end={30000} prefix="₹" /></div>
-                                        <div className="text-sm text-muted-foreground font-medium">Worth Prizes</div>
-                                    </div>
+                    <div className="lg:col-span-5 hidden lg:block relative lg:mb-0">
+                        <div className="relative h-[350px] sm:h-[450px] md:h-[612px] w-full ml-auto overflow-hidden shadow-2xl border-4 border-white">
+                            <Image
+                                src="/images/iisc-bangalore.png"
+                                alt="IISc Bangalore"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white/95 via-white/80 to-transparent pt-32 pb-8 px-8 text-center">
+                                <div className="relative z-10">
+                                    <p className="text-primary font-bold text-base md:text-lg uppercase tracking-tight opacity-90">
+                                        Your registration can lead you to
+                                    </p>
+                                    <h3 className="text-primary font-bold text-2xl md:text-4xl lg:text-5xl tracking-tight leading-none uppercase whitespace-nowrap">
+                                        IISc Bangalore
+                                    </h3>
                                 </div>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ export default function StructuredData() {
         "image": [
             "https://stemxplore2026.stemonsters.com/og-image.png"
         ],
-        "description": "A 2-day mega virtual event to celebrate science and hands-on learning with hackathons, panel discussions, and stem talks.",
+        "description": "A 2-day mega event starting virtually and concluding at IISc Bangalore to celebrate science and hands-on learning with hackathons, panel discussions, and stem talks.",
         "organizer": {
             "@type": "Organization",
             "name": "STEMonsters",

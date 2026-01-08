@@ -4,6 +4,35 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { useState, useEffect } from "react";
+import { School, Users, Trophy, Globe } from "lucide-react";
+
+function CountUp({ end, prefix = "", suffix = "", duration = 2000 }: { end: number; prefix?: string; suffix?: string; duration?: number }) {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        let startTime: number;
+        let animationFrame: number;
+
+        const animate = (currentTime: number) => {
+            if (!startTime) startTime = currentTime;
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            setCount(Math.floor(easeOutQuart * end));
+
+            if (progress < 1) {
+                animationFrame = requestAnimationFrame(animate);
+            }
+        };
+
+        animationFrame = requestAnimationFrame(animate);
+        return () => cancelAnimationFrame(animationFrame);
+    }, [end, duration]);
+
+    return <>{prefix}{count.toLocaleString()}{suffix}</>;
+}
 
 export default function About() {
     return (
@@ -55,6 +84,28 @@ export default function About() {
                             </Button>
                         </ScrollReveal>
                     </div>
+                </div>
+
+                {/* Stats Cards moved out of the content column to align with section start */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pt-12 border-t border-border mt-16">
+                    {[
+                        { icon: School, end: 10, label: "Cities", suffix: "+" },
+                        { icon: Users, end: 1000, label: "Participants", suffix: "+" },
+                        { icon: Trophy, end: 30000, label: "Prizes", prefix: "₹" },
+                        { icon: Globe, end: 2000, label: "Community", suffix: "+" }
+                    ].map((stat, index) => (
+                        <ScrollReveal key={index} delay={0.1 * (index + 1)}>
+                            <div className="bg-background border border-border p-6 h-full flex flex-col items-center justify-center transition-all duration-300 hover:border-primary group">
+                                <div className="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-primary/10">
+                                    <stat.icon className="w-6 h-6 text-primary" />
+                                </div>
+                                <div className="text-3xl font-bold mb-1 text-primary">
+                                    <CountUp end={stat.end} prefix={stat.prefix} suffix={stat.suffix} />
+                                </div>
+                                <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">{stat.label}</div>
+                            </div>
+                        </ScrollReveal>
+                    ))}
                 </div>
             </div>
         </section>

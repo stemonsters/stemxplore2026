@@ -24,7 +24,7 @@ export default function AboutHero() {
                 </h1>
 
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
-                    Unlocking potential through STEM. We believe every student has the power to change the world—we just provide the launchpad.
+                    Unlocking potential through STEM. We believe every student has the power to change the world: we just provide the launchpad.
                 </p>
             </div>
         </section>
