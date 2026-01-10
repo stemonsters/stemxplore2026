@@ -8,23 +8,24 @@ import { Card, CardContent } from "@/components/ui/card";
 const scheduleData = [
     {
         title: "Mar 8, 2026",
-        location: "Virtual",
+        location: "Online",
         events: [
             {
-                time: "10:00 AM IST",
-                title: "Welcome Address by Dr. Sonali Dasgupta",
+                time: "10:30 AM IST",
+                title: "Launching STEMXplore2026",
+                description: "Address by Dr. Sonali Dasgupta",
                 type: "Opening",
             },
             {
                 time: "10:30 AM IST",
-                title: "Junior Hackathon | Grades 3 - 5",
-                description: "Scratch Based Coding Contest",
-                type: "Contest",
+                title: "Expert Panel Discussion",
+                description: "The 2030 Horizon and Beyond: Skills, Mindsets, and Learning (For Parents & Educators)",
+                type: "Panel",
             },
             {
-                time: "11:45 AM IST",
-                title: "Let's Talk STEM | Grades 7 - 12",
-                description: "3 - Minute STEM Talks - Finale",
+                time: "11:30 AM IST",
+                title: "Sustainability Quiz & Jr. Hackathon | Grades 4 - 6",
+                description: "Scratch Based Coding Contest",
                 type: "Contest",
             },
         ],
@@ -34,16 +35,31 @@ const scheduleData = [
         location: "IISc Bangalore",
         events: [
             {
-                time: "10:30 AM IST",
-                title: "Expert Panel Discussion",
-                description: "Topic: The 2030 Horizon and Beyond",
-                type: "Panel",
+                time: "10:00 AM IST",
+                title: "Welcome Address to the Finals",
+                type: "Opening",
             },
             {
-                time: "12:00 noon IST",
-                title: "Story Behind My Tech | Grades 7 - 12",
+                time: "10:30 AM IST",
+                title: "Finals of Let's Talk STEM | Grades 7 - 12",
+                description: "3-Minute STEM Talks Finale",
+                type: "Contest",
+            },
+            {
+                time: "11:30 AM IST",
+                title: "Winner Showcase of Jr. Hackathon | Grades 4 - 6",
+                type: "Contest",
+            },
+            {
+                time: "12:00 PM IST",
+                title: "Finals of Story Behind My Tech | Grades 7 - 12",
                 description: "\"Engineering Energy Efficient Communities\"",
                 type: "Contest",
+            },
+            {
+                time: "02:00 PM IST",
+                title: "Winner Announcement, Prize Distribution and Wrap Up",
+                type: "Closing",
             },
         ],
     },

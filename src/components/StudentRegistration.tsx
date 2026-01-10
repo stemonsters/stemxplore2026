@@ -197,7 +197,7 @@ export default function StudentRegistration() {
                                                 <SelectValue placeholder="Select" />
                                             </SelectTrigger>
                                             <SelectContent>
-                                                <SelectItem value="3-6">Grades 3-6</SelectItem>
+                                                <SelectItem value="4-6">Grades 4-6</SelectItem>
                                                 <SelectItem value="7-9">Grades 7-9</SelectItem>
                                                 <SelectItem value="10-12">Grades 10-12</SelectItem>
                                             </SelectContent>

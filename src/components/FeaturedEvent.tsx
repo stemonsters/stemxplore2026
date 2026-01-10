@@ -34,7 +34,7 @@ export default function FeaturedEvent() {
                                 For Parents & Educators
                             </span>
                             <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-base font-medium border border-border">
-                                March 15, 2026
+                                March 8, 2026
                             </span>
                             <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-muted text-muted-foreground text-base font-medium border border-border">
                                 10:30 AM IST

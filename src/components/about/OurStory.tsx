@@ -64,7 +64,7 @@ export default function OurStory() {
                                 <strong>STEMXplore 2026</strong> is a premier symposium starting with a virtual track for students across the nation and culminating in a grand finale at IISc Bangalore. Our goal is simple: to celebrate India’s National Science Day through discovery, creativity, and practical application.
                             </p>
                             <p>
-                                We believe that true learning happens beyond textbooks. This event provides a unique platform for young minds (Grades 3-12) to showcase their ideas, compete in hackathons, and engage with thought leaders in the field of STEM.
+                                We believe that true learning happens beyond textbooks. This event provides a unique platform for young minds (Grades 4-12) to showcase their ideas, compete in hackathons, and engage with thought leaders in the field of STEM.
                             </p>
                             <p>
                                 Whether it's building a project in Scratch, debating the future of AI, or presenting a scientific model, STEMXplore is about empowering the next generation of innovators with the skills they need for the future.

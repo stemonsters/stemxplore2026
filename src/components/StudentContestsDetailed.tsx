@@ -100,7 +100,7 @@ export default function StudentContestsDetailed() {
                                                 <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                             </svg>
-                                            <span className="font-semibold text-foreground">Grades 3 - 5</span>
+                                            <span className="font-semibold text-foreground">Grades 4 - 6</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -112,7 +112,7 @@ export default function StudentContestsDetailed() {
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
-                                            <span className="font-semibold text-foreground">10:30 AM IST</span>
+                                            <span className="font-semibold text-foreground">11:30 AM IST</span>
                                         </div>
                                     </div>
                                     <div className="space-y-4">
@@ -159,13 +159,13 @@ export default function StudentContestsDetailed() {
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                             </svg>
-                                            <span className="font-semibold">March 8, 2026</span>
+                                            <span className="font-semibold">March 15, 2026</span>
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
-                                            <span className="font-semibold">11:45 AM IST</span>
+                                            <span className="font-semibold">10:30 AM IST</span>
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -186,7 +186,7 @@ export default function StudentContestsDetailed() {
                                         </div>
                                         <div className="flex items-start gap-2">
                                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 shrink-0" />
-                                            <span><strong>Round 3:</strong> Present your 3-min LIVE Talk on March 8, 2026!</span>
+                                            <span><strong>Round 3:</strong> Present your 3-min LIVE Talk on March 15, 2026!</span>
                                         </div>
                                     </div>
                                 </TabsContent>
@@ -217,7 +217,7 @@ export default function StudentContestsDetailed() {
                                             <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
-                                            <span className="font-semibold">12:00 noon IST</span>
+                                            <span className="font-semibold">12:00 PM IST</span>
                                         </div>
                                     </div>
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
