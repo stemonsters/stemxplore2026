@@ -195,8 +195,35 @@ export default function Support() {
                     </ScrollReveal>
                 </div>
 
-                {/* Event Partners Carousel */}
+                {/* Current Partner Section */}
                 <ScrollReveal className="mt-20" delay={0.2}>
+                    <div className="mb-10 text-center">
+                        <h3 className="text-xl md:text-2xl font-bold tracking-tight">
+                            Event Partner
+                        </h3>
+                    </div>
+
+                    <div className="flex flex-col items-center mb-16">
+                        <div
+                            className="bg-white w-[200px] h-[120px] rounded-xl border border-border flex items-center justify-center p-2 mb-4 shadow-sm"
+                        >
+                            <div className="relative w-full h-full">
+                                <Image
+                                    src="/images/partners/ieee-sps-bangalore.png"
+                                    alt="IEEE Signal Processing Society Bangalore Chapter"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
+                        <div className="text-center max-w-[280px]">
+                            <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
+                                IEEE Signal Processing Society
+                            </h4>
+                            <p className="text-primary font-bold text-xs mt-1">Bangalore Chapter</p>
+                        </div>
+                    </div>
+
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                             Past Partners
