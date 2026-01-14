@@ -223,6 +223,26 @@ export default function StudentContestsDetailed() {
                                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                         Theme: <strong>&quot;Engineering Energy Efficient Communities&quot;</strong>.
                                     </p>
+                                    <div className="space-y-2 text-base text-muted-foreground bg-blue-500/10 p-4 border-l-4 border-blue-500/50 rounded-r">
+                                        <p className="font-semibold text-foreground flex items-start gap-2">
+                                            <Users className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                                            Group Event
+                                        </p>
+                                        <ul className="space-y-1 ml-7 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 shrink-0" />
+                                                <span>Students may submit as a group of up to 4 students</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 shrink-0" />
+                                                <span>All 4 students in a group must register separately</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 shrink-0" />
+                                                <span>Individual submissions are also acceptable</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div className="space-y-1 text-base text-muted-foreground bg-primary/5 p-4 border-l-4 border-primary/30">
                                         <p className="font-semibold mb-2 text-foreground">Build your solution using any of these platforms:</p>
                                         <ul className="grid grid-cols-1 gap-1">
