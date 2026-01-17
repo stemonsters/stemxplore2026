@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import InfoSessionBanner from "@/components/InfoSessionBanner";
 import StudentContestsHighlight from "@/components/StudentContestsHighlight";
 import EventBlocks from "@/components/EventBlocks";
 import FeaturedEvent from "@/components/FeaturedEvent";
@@ -32,6 +33,7 @@ export default function Home() {
       <StructuredData />
       <Header />
       <Hero />
+      <InfoSessionBanner />
       <StudentContestsHighlight />
       <ImportantDates />
       <ApplicationSteps />
