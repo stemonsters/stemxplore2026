@@ -203,24 +203,71 @@ export default function Support() {
                         </h3>
                     </div>
 
-                    <div className="flex flex-col items-center mb-16">
-                        <div
-                            className="bg-white w-[200px] h-[120px] rounded-xl border border-border flex items-center justify-center p-2 mb-4 shadow-sm"
-                        >
-                            <div className="relative w-full h-full">
-                                <Image
-                                    src="/images/partners/ieee-sps-bangalore.png"
-                                    alt="IEEE Signal Processing Society Bangalore Chapter"
-                                    fill
-                                    className="object-contain"
-                                />
+                    <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-12 mb-16">
+                        {/* Event Partner */}
+                        <div className="flex flex-col items-center">
+                            <div
+                                className="bg-white w-[200px] h-[120px] rounded-xl border border-border flex items-center justify-center p-2 mb-4 shadow-sm"
+                            >
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/partners/ieee-sps-bangalore.png"
+                                        alt="IEEE Signal Processing Society Bangalore Chapter"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-center max-w-[280px]">
+                                <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
+                                    IEEE Signal Processing Society
+                                </h4>
+                                <p className="text-primary font-bold text-xs mt-1">Bangalore Chapter</p>
                             </div>
                         </div>
-                        <div className="text-center max-w-[280px]">
-                            <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
-                                IEEE Signal Processing Society
-                            </h4>
-                            <p className="text-primary font-bold text-xs mt-1">Bangalore Chapter</p>
+
+                        {/* DigiKey - Gifting Partner */}
+                        <div className="flex flex-col items-center">
+                            <div
+                                className="bg-white w-[200px] h-[120px] rounded-xl border border-border flex items-center justify-center p-2 mb-4 shadow-sm"
+                            >
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/partners/digikey-logo.png"
+                                        alt="DigiKey"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-center max-w-[280px]">
+                                <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
+                                    DigiKey
+                                </h4>
+                                <p className="text-primary font-bold text-xs mt-1">Gifting Partner</p>
+                            </div>
+                        </div>
+
+                        {/* TOYNIK - Gifting Partner */}
+                        <div className="flex flex-col items-center">
+                            <div
+                                className="bg-white w-[200px] h-[120px] rounded-xl border border-border flex items-center justify-center p-2 mb-4 shadow-sm"
+                            >
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/images/partners/toynik-logo.png"
+                                        alt="TOYNIK"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-center max-w-[280px]">
+                                <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
+                                    TOYNIK
+                                </h4>
+                                <p className="text-primary font-bold text-xs mt-1">Gifting Partner</p>
+                            </div>
                         </div>
                     </div>
 

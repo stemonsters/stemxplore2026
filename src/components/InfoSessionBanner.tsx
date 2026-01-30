@@ -15,13 +15,13 @@ export default function InfoSessionBanner() {
                         </div>
                         <div className="text-left">
                             <div className="flex items-center justify-start gap-2 mb-1">
-                                <span className="text-primary font-bold uppercase text-xs tracking-wider">Happening Tonight</span>
+                                <span className="text-primary font-bold uppercase text-xs tracking-wider">Watch the Session</span>
                             </div>
                             <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight">
-                                Live Information session for parents, educators and students.
+                                Missed the live session? Watch the recording now!
                             </h3>
                             <p className="text-muted-foreground font-medium mt-1.5 text-sm sm:text-base">
-                                17th Jan, 7:00 PM - 7:30 PM
+                                Information session for parents, educators and students.
                             </p>
                         </div>
                     </div>
@@ -34,11 +34,11 @@ export default function InfoSessionBanner() {
                             className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground rounded-none px-6 font-medium border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group shadow-sm"
                         >
                             <a
-                                href="https://zoom.us/j/96725447689?pwd=Ix0aNjVQxo9iX3dOuJM5WjqYsSOPda.1"
+                                href="https://youtu.be/z0ehRXQmBdk"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Join Zoom Session <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                Watch on YouTube <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </a>
                         </Button>
                     </div>
