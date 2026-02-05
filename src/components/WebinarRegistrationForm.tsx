@@ -129,7 +129,7 @@ export default function WebinarRegistrationForm() {
                                     Reserve Your Spot
                                 </h3>
                                 <p className="text-sm text-muted-foreground mt-1">
-                                    Fill out the form below to receive joining details.
+                                    For Parents and Educators | Fill in the form to register for the webinar | For students, use the Contest Registration link to participate
                                 </p>
                             </div>
 

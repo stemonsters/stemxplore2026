@@ -13,7 +13,10 @@ export default function SchoolRegistration() {
         "sparklingmindz-logo.png",
         "legacy-school-logo.png",
         "kunskapsfolan-logo.png",
-        "candor-school-logo.jpg"
+        "candor-school-logo.jpg",
+        "21k-school-logo.png",
+        "rn-podar-school-logo.jpg",
+        "snslogo.webp"
     ]).flat();
     const [isPaused, setIsPaused] = useState(false);
 
