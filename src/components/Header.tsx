@@ -1,28 +1,45 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
+import NotificationMarquee from "./NotificationMarquee";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [showNavLogo, setShowNavLogo] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [showMarquee, setShowMarquee] = useState(true);
     const pathname = usePathname();
+    const { scrollY } = useScroll();
+    const lastScrollY = useRef(0);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
-            // Show nav logo after scrolling past hero logo (around 200px)
-            setShowNavLogo(window.scrollY > 200);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        const diff = latest - lastScrollY.current;
+        const isScrollingDown = diff > 0;
+        const isScrollingUp = diff < 0;
+
+        if (latest < 10) {
+            // Always show at top
+            setShowMarquee(true);
+            setIsScrolled(false);
+            setShowNavLogo(false);
+        } else {
+            setIsScrolled(true);
+            setShowNavLogo(latest > 200);
+
+            if (isScrollingDown && latest > 50) {
+                setShowMarquee(false);
+            } else if (isScrollingUp) {
+                setShowMarquee(true);
+            }
+        }
+        lastScrollY.current = latest;
+    });
 
     const navLinks = [
         { name: "Contests", href: "/#contest-details" },
@@ -38,6 +55,20 @@ export default function Header() {
                 : "bg-transparent border-transparent"
                 }`}
         >
+            <AnimatePresence>
+                {showMarquee && (
+                    <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                    >
+                        <NotificationMarquee />
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <div className="w-full lg:max-w-[80vw] mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo - always visible on other pages, reveals on scroll on homepage */}
                 <Link href="/" className={`flex items-center transition-all duration-300 ${(pathname !== "/" || showNavLogo) ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
@@ -55,6 +86,7 @@ export default function Header() {
                             {link.name}
                         </Link>
                     ))}
+                    {/* ... rest of nav ... */}
                     <div className="flex items-center gap-2">
                         {pathname !== "/webinar-registration" && (
                             <Button asChild variant="outline" className="rounded-none border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">

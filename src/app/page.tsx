@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import InfoSessionBanner from "@/components/InfoSessionBanner";
 import StudentContestsHighlight from "@/components/StudentContestsHighlight";
 import EventBlocks from "@/components/EventBlocks";
 import FeaturedEvent from "@/components/FeaturedEvent";
@@ -33,7 +32,8 @@ export default function Home() {
       <StructuredData />
       <Header />
       <Hero />
-      <InfoSessionBanner />
+      <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-t border-border" />
+      <About />
       <StudentContestsHighlight />
       <ImportantDates />
       <ApplicationSteps />
@@ -42,7 +42,6 @@ export default function Home() {
       <StudentContestsDetailed />
 
       <Schedule />
-      <About />
       <SchoolRegistration />
       <Support />
       <StudentRegistration />
