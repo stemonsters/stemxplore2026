@@ -199,7 +199,7 @@ export default function Support() {
                 <ScrollReveal className="mt-20" delay={0.2}>
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                            Event Partner
+                            Event Partners
                         </h3>
                     </div>
 
@@ -222,7 +222,7 @@ export default function Support() {
                                 <h4 className="text-sm font-bold text-foreground uppercase tracking-tight leading-tight">
                                     IEEE Signal Processing Society
                                 </h4>
-                                <p className="text-primary font-bold text-xs mt-1">Bangalore Chapter</p>
+                                <p className="text-primary font-bold text-xs mt-1">Gold Sponsor</p>
                             </div>
                         </div>
 
@@ -271,55 +271,7 @@ export default function Support() {
                         </div>
                     </div>
 
-                    <div className="mb-10 text-center">
-                        <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                            Past Partners
-                        </h3>
-                    </div>
 
-                    <div className="relative w-full flex overflow-hidden mask-gradient-to-r from-transparent via-black to-transparent group">
-                        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-background to-transparent" />
-                        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-background to-transparent" />
-
-                        <div
-                            className="flex gap-8 items-center animate-scroll group-hover:[animation-play-state:paused]"
-                            style={{ width: "fit-content" }}
-                        >
-                            {/* First set of partners */}
-                            {partners.map((partner, index) => (
-                                <div
-                                    key={`first-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
-                                >
-                                    <div className="relative w-full h-full">
-                                        <Image
-                                            src={`/images/past-partners/${partner}`}
-                                            alt={`Partner ${index + 1}`}
-                                            fill
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                </div>
-                            ))}
-
-                            {/* Second set of partners for seamless loop */}
-                            {partners.map((partner, index) => (
-                                <div
-                                    key={`second-${index}`}
-                                    className="flex-shrink-0 w-[200px] h-[120px] flex rounded-xl bg-white border border-border items-center justify-center p-2 hover:bg-white/80 transition-colors"
-                                >
-                                    <div className="relative w-full h-full">
-                                        <Image
-                                            src={`/images/past-partners/${partner}`}
-                                            alt={`Partner ${index + 1}`}
-                                            fill
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </ScrollReveal>
             </div>
         </section>

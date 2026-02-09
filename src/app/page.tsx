@@ -32,8 +32,6 @@ export default function Home() {
       <StructuredData />
       <Header />
       <Hero />
-      <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-t border-border" />
-      <About />
       <StudentContestsHighlight />
       <ImportantDates />
       <ApplicationSteps />
@@ -42,6 +40,7 @@ export default function Home() {
       <StudentContestsDetailed />
 
       <Schedule />
+      <About />
       <SchoolRegistration />
       <Support />
       <StudentRegistration />

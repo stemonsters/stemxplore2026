@@ -46,6 +46,11 @@ export default function Hero() {
                         className="lg:col-span-7"
                     >
                         {/* Logo and Knowledge Partner Container */}
+                        <div className="mb-2">
+                            <span className="text-sm md:text-base font-bold text-black uppercase tracking-wider">
+                                STEMonsters Education Presents
+                            </span>
+                        </div>
                         <div className="flex items-center gap-4 md:gap-8 mb-4 md:mb-6">
                             {/* Main Event Logo */}
                             <Image

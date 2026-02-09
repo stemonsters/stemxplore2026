@@ -56,7 +56,7 @@ export default function SchoolRegistration() {
                 <ScrollReveal className="mt-20" delay={0.2}>
                     <div className="mb-10 text-center">
                         <h3 className="text-xl md:text-2xl font-bold tracking-tight">
-                            Past Partner Schools
+                            Partner Schools
                         </h3>
                     </div>
 
