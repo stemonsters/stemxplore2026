@@ -21,7 +21,7 @@ export default function AboutHero() {
 
             <div className="container mx-auto px-4 relative z-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    <div className="text-left">
+                    <div className="text-left order-2 lg:order-1">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
                             Empowering Future <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
@@ -42,8 +42,8 @@ export default function AboutHero() {
                         </div>
                     </div>
 
-                    <div className="relative flex justify-center items-center lg:justify-end">
-                        <div className="relative w-full max-w-md">
+                    <div className="relative flex justify-start items-center lg:justify-end order-1 lg:order-2">
+                        <div className="relative w-60 sm:w-72 lg:w-full lg:max-w-md">
                             <Image
                                 src="/images/stemonsters-logo.png"
                                 alt="STEMonsters Logo"
