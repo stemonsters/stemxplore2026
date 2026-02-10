@@ -34,6 +34,17 @@ function CountUp({ end, prefix = "", suffix = "", duration = 2000 }: { end: numb
 }
 
 export default function Hero() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <section className="relative h-auto lg:h-screen flex items-center justify-center pt-20 pb-12 lg:pt-0 lg:pb-0 overflow-hidden bg-background">
             {/* Grid Background */}
@@ -46,9 +57,19 @@ export default function Hero() {
                         className="lg:col-span-7"
                     >
                         {/* Logo and Knowledge Partner Container */}
-                        <div className="mb-2">
-                            <span className="text-sm md:text-base font-bold text-black uppercase tracking-wider">
-                                STEMonsters Education Presents
+                        <div
+                            className={`flex flex-col items-start gap-0.5 mb-2 transition-all duration-500 ease-in-out ${isScrolled ? 'opacity-0 -translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'
+                                }`}
+                        >
+                            <Image
+                                src="/images/stemonsters-logo.png"
+                                alt="STEMonsters Education"
+                                width={200}
+                                height={60}
+                                className="h-8 md:h-10 w-auto"
+                            />
+                            <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground whitespace-nowrap ml-1">
+                                Presents
                             </span>
                         </div>
                         <div className="flex items-center gap-4 md:gap-8 mb-4 md:mb-6">

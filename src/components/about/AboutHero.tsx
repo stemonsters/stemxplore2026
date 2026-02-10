@@ -7,13 +7,19 @@ export default function AboutHero() {
     return (
         <section className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden bg-background border-b border-border">
             {/* Background Gradients */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-                <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl opacity-50" />
-                <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl opacity-50" />
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px]" />
+            {/* Background Image and Overlay */}
+            <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+                <Image
+                    src="/images/about-hero-bg.jpg"
+                    alt="About Hero Background"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                <div className="absolute inset-0 bg-white/80 z-10" />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container mx-auto px-4 relative z-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div className="text-left">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-[1.1]">
