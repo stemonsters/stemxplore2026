@@ -336,7 +336,7 @@ export default function StudentContestsDetailed() {
                                 <div className="w-32 h-32 mb-6 relative flex items-center justify-center border-4 border-primary rounded-full p-0.5">
                                     <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
                                         <img
-                                            src="/images/judges/pushpa-thantry.jpg"
+                                            src="/images/judges/pushpa-thantry.JPG"
                                             alt="Pushpa Thantry"
                                             className="object-cover w-full h-full"
                                         />

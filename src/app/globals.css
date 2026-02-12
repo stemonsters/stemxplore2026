@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
   --color-background: var(--background);
@@ -83,47 +83,7 @@
   --sidebar-ring: oklch(0.5261 0.0882 220.4);
 }
 
-.dark {
-  /* Technical Grid Theme - Dark Mode (Primary) */
-  --background: oklch(0.15 0 0);
-  /* Matte Charcoal/Black */
-  --foreground: oklch(0.95 0 0);
-  /* Off-white */
-  --card: oklch(0.18 0 0);
-  /* Slightly lighter charcoal */
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.18 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.5261 0.0882 220.4);
-  /* Teal #1b768e */
-  --primary-foreground: oklch(0.15 0 0);
-  --secondary: oklch(0.25 0 0);
-  /* Dark Grey */
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.70 0.19 40);
-  /* Orange #f97316 */
-  --accent-foreground: oklch(0.15 0 0);
-  --destructive: oklch(0.6 0.25 20);
-  --border: oklch(0.3 0 0);
-  /* Visible borders */
-  --input: oklch(0.3 0 0);
-  --ring: oklch(0.5261 0.0882 220.4);
-  --chart-1: oklch(0.5261 0.0882 220.4);
-  --chart-2: oklch(0.70 0.19 40);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.18 0 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.5261 0.0882 220.4);
-  --sidebar-primary-foreground: oklch(0.15 0 0);
-  --sidebar-accent: oklch(0.25 0 0);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.3 0 0);
-  --sidebar-ring: oklch(0.5261 0.0882 220.4);
-}
+
 
 @layer base {
   * {
