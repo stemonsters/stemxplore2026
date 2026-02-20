@@ -147,26 +147,28 @@ export default function Hero() {
                             </Button>
                         </div>
 
-                        <div className="flex items-center gap-6 border-t border-border pt-6">
+                        <div className="flex flex-col sm:flex-row items-start gap-8 border-t border-border pt-6">
                             <div className="flex items-center gap-4 group">
-                                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 flex flex-col items-center justify-center text-primary-foreground shadow-lg">
+                                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 flex flex-col items-center justify-center text-primary-foreground shadow-lg shrink-0">
                                     <span className="text-2xl font-bold leading-none">08</span>
                                     <span className="text-xs uppercase tracking-wide">Mar</span>
                                 </div>
-                                <div>
-                                    <div className="text-lg text-primary font-bold uppercase tracking-wider">Day 1</div>
-                                    <div className="text-base text-muted-foreground">Sunday, 2026</div>
+                                <div className="flex flex-col justify-center">
+                                    <div className="text-lg text-primary font-bold uppercase tracking-wider leading-tight">Day 1</div>
+                                    <div className="text-sm text-primary font-bold tracking-wider uppercase leading-tight">Online</div>
+                                    <div className="text-base text-muted-foreground leading-tight mt-0.5">Sunday, 2026</div>
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-4 group">
-                                <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/70 flex flex-col items-center justify-center text-accent-foreground shadow-lg">
+                                <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/70 flex flex-col items-center justify-center text-accent-foreground shadow-lg shrink-0">
                                     <span className="text-2xl font-bold leading-none">15</span>
                                     <span className="text-xs uppercase tracking-wide">Mar</span>
                                 </div>
-                                <div>
-                                    <div className="text-lg text-accent font-bold uppercase tracking-wider">Day 2</div>
-                                    <div className="text-base text-muted-foreground">Sunday, 2026</div>
+                                <div className="flex flex-col justify-center">
+                                    <div className="text-lg text-accent font-bold uppercase tracking-wider leading-tight">Day 2</div>
+                                    <div className="text-sm text-accent font-bold tracking-wider uppercase leading-tight">At IISc</div>
+                                    <div className="text-base text-muted-foreground leading-tight mt-0.5">Sunday, 2026</div>
                                 </div>
                             </div>
                         </div>

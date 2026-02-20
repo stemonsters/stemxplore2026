@@ -300,76 +300,100 @@ export default function StudentContestsDetailed() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
                         {/* Judge 1: Sukumar Rangachari */}
-                        <ScrollReveal className="group relative bg-card h-full" delay={0.1}>
-                            <div className="border border-border hover:border-primary/50 transition-colors p-6 rounded-xl flex flex-col items-center text-center h-full">
-                                <div className="w-32 h-32 mb-6 relative flex items-center justify-center border-4 border-primary rounded-full p-0.5">
-                                    <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
-                                        <img
-                                            src="/images/judges/sukumar-rangachari.jpeg"
-                                            alt="Sukumar Rangachari"
-                                            className="object-cover w-full h-full"
-                                        />
-                                    </div>
+                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.1}>
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/judges/sukumar-rangachari.jpeg"
+                                    alt="Sukumar Rangachari"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Sukumar Rangachari</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Business Mentor</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        NSRCEL
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/sukumar-rangachari-a96667a/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">Sukumar Rangachari</h3>
-                                <p className="text-primary font-medium mb-4">Business Mentor at NSRCEL</p>
-
-                                <a
-                                    href="https://www.linkedin.com/in/sukumar-rangachari-a96667a/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-auto inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
-                                    </svg>
-                                    View LinkedIn
-                                </a>
                             </div>
                         </ScrollReveal>
 
                         {/* Judge 2: Pushpa Thantry */}
-                        <ScrollReveal className="group relative bg-card h-full" delay={0.2}>
-                            <div className="border border-border hover:border-primary/50 transition-colors p-6 rounded-xl flex flex-col items-center text-center h-full">
-                                <div className="w-32 h-32 mb-6 relative flex items-center justify-center border-4 border-primary rounded-full p-0.5">
-                                    <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
-                                        <img
-                                            src="/images/judges/pushpa-thantry.JPG"
-                                            alt="Pushpa Thantry"
-                                            className="object-cover w-full h-full"
-                                        />
-                                    </div>
+                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.2}>
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/judges/pushpa-thantry.JPG"
+                                    alt="Pushpa Thantry"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Pushpa Thantry</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Director</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        Akshara Foundation
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/pushpa-thantry-6375b82/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">Pushpa Thantry</h3>
-                                <p className="text-primary font-medium mb-4">Director at Akshara Foundation</p>
-
-                                <a
-                                    href="https://www.linkedin.com/in/pushpa-thantry-6375b82/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-auto inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
-                                    </svg>
-                                    View LinkedIn
-                                </a>
                             </div>
                         </ScrollReveal>
 
-                        {/* Placeholder for more judges */}
-                        <ScrollReveal className="group relative h-full" delay={0.3}>
-                            <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-dashed border-border p-8 flex flex-col items-center justify-center text-center h-full min-h-[360px] hover:border-primary/50 hover:bg-primary/5 transition-all duration-300">
-                                <div className="relative mb-4 group-hover:scale-110 transition-transform duration-300">
-                                    <div className="absolute inset-0 bg-primary blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
-                                    <div className="w-20 h-20 rounded-full bg-background flex items-center justify-center border-2 border-primary/20 group-hover:border-primary transition-colors">
-                                        <Users className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors" />
-                                    </div>
+                        {/* Judge 3: Dr. Kumudhini Ravindra */}
+                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.3}>
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/judges/dr-kumudhini-ravindra.jpg"
+                                    alt="Dr. Kumudhini Ravindra"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr. Kumudhini Ravindra</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Chief Mentor & Principal Partner</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        Blue Lotus Inc · Innomantra
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/dr-kumudhini-ravindra-blue-lotus-inc/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
                                 </div>
-                                <h3 className="text-lg font-bold mb-2">Join Proposed</h3>
-                                <p className="text-muted-foreground text-sm max-w-[200px]">More distinguished judges and mentors are being finalized.</p>
                             </div>
                         </ScrollReveal>
                     </div>

@@ -86,7 +86,7 @@ export default function FeaturedEvent() {
                     </ScrollReveal>
                 </div>
 
-                {/* Expert Panel Section (Merged) */}
+                {/* Expert Panel Section */}
                 <ScrollReveal delay={0.2}>
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 text-center md:text-left">
                         <div>
@@ -95,26 +95,100 @@ export default function FeaturedEvent() {
                         </div>
                     </div>
 
-                    <div className="relative overflow-hidden rounded-xl border border-border bg-card/30 p-12 text-center backdrop-blur-sm">
-                        <div className="relative z-10 flex flex-col items-center justify-center">
-                            <div className="mb-6 relative">
-                                <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
-                                <div className="relative p-4 rounded-full bg-background border border-border shadow-sm">
-                                    <User className="w-10 h-10 text-primary" />
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
+                        {/* Expert Card: Dr. Jitendra Balakrishnan */}
+                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/speakers/jitendra_balakrishnan.jpg"
+                                    alt="Dr. Jitendra Balakrishnan"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr. Jitendra Balakrishnan</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">CEO TRYST</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        The IIT Bombay Translational Research Foundation
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/jitendra-balakrishnan/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
                                 </div>
                             </div>
+                        </div>
 
-                            <h3 className="text-2xl font-bold mb-3">Panelists Announcement Pending</h3>
-                            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto mb-6 leading-relaxed">
-                                Finalizing our lineup of industry experts and thought leaders. Stay tuned!
-                            </p>
+                        {/* Expert Card: Mekin Maheshwari */}
+                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/speakers/mekin_maheshwari.png"
+                                    alt="Mekin Maheshwari"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Mekin Maheshwari</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Founder & CEO</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        Udhyam Learning Foundation
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/mekin/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">
-                                <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                                </span>
-                                Coming Soon
+                        {/* Expert Card: Shreya Santra */}
+                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                            <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
+                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                                <img
+                                    src="/images/speakers/shreya_santra.png"
+                                    alt="Shreya Santra"
+                                    className="absolute inset-0 w-full h-full object-cover object-top -z-10"
+                                />
+                                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
+                                <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
+                                    <div className="w-12 h-1 bg-primary mb-3" />
+                                    <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Shreya Santra</h3>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Specially Appointed Lecturer</p>
+                                    <p className="text-xs text-white/90 mb-3 w-full px-2">
+                                        Dept. Aerospace Engineering, Tohoku University Japan
+                                    </p>
+                                    <a
+                                        href="https://www.linkedin.com/in/shreya-santra/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+                                        LinkedIn
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
