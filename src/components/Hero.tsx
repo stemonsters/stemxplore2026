@@ -155,7 +155,7 @@ export default function Hero() {
                                 </div>
                                 <div>
                                     <div className="text-lg text-primary font-bold uppercase tracking-wider">Day 1</div>
-                                    <div className="text-base text-muted-foreground">Saturday, 2026</div>
+                                    <div className="text-base text-muted-foreground">Sunday, 2026</div>
                                 </div>
                             </div>
 
@@ -166,7 +166,7 @@ export default function Hero() {
                                 </div>
                                 <div>
                                     <div className="text-lg text-accent font-bold uppercase tracking-wider">Day 2</div>
-                                    <div className="text-base text-muted-foreground">Saturday, 2026</div>
+                                    <div className="text-base text-muted-foreground">Sunday, 2026</div>
                                 </div>
                             </div>
                         </div>
