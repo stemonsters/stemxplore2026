@@ -302,9 +302,9 @@ export default function StudentContestsDetailed() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
                         {/* Judge 1: Sukumar Rangachari */}
-                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.1}>
+                        <ScrollReveal className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]" delay={0.1}>
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/judges/sukumar-rangachari.jpeg"
                                     alt="Sukumar Rangachari"
@@ -334,9 +334,9 @@ export default function StudentContestsDetailed() {
                         </ScrollReveal>
 
                         {/* Judge 2: Pushpa Thantry */}
-                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.2}>
+                        <ScrollReveal className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]" delay={0.2}>
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/judges/pushpa-thantry.JPG"
                                     alt="Pushpa Thantry"
@@ -366,9 +366,9 @@ export default function StudentContestsDetailed() {
                         </ScrollReveal>
 
                         {/* Judge 3: Dr. Kumudhini Ravindra */}
-                        <ScrollReveal className="relative w-full min-h-[420px] md:min-h-[490px]" delay={0.3}>
+                        <ScrollReveal className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]" delay={0.3}>
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/judges/dr-kumudhini-ravindra.jpg"
                                     alt="Dr. Kumudhini Ravindra"

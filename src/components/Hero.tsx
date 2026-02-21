@@ -167,7 +167,7 @@ export default function Hero() {
                                 </div>
                                 <div className="flex flex-col justify-center">
                                     <div className="text-lg text-accent font-bold uppercase tracking-wider leading-tight">Day 2</div>
-                                    <div className="text-sm text-accent font-bold tracking-wider uppercase leading-tight">At IISc</div>
+                                    <div className="text-sm text-accent font-bold tracking-wider uppercase leading-tight">At IISc Bangalore</div>
                                     <div className="text-base text-muted-foreground leading-tight mt-0.5">Sunday, 2026</div>
                                 </div>
                             </div>

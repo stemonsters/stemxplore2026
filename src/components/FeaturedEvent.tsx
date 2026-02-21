@@ -97,9 +97,9 @@ export default function FeaturedEvent() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4">
                         {/* Expert Card: Dr. Jitendra Balakrishnan */}
-                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                        <div className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]">
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/speakers/jitendra_balakrishnan.jpg"
                                     alt="Dr. Jitendra Balakrishnan"
@@ -129,9 +129,9 @@ export default function FeaturedEvent() {
                         </div>
 
                         {/* Expert Card: Mekin Maheshwari */}
-                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                        <div className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]">
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/speakers/mekin_maheshwari.png"
                                     alt="Mekin Maheshwari"
@@ -141,7 +141,7 @@ export default function FeaturedEvent() {
                                 <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
                                     <div className="w-12 h-1 bg-primary mb-3" />
                                     <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Mekin Maheshwari</h3>
-                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Founder & CEO</p>
+                                    <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Founder</p>
                                     <p className="text-xs text-white/90 mb-3 w-full px-2">
                                         Udhyam Learning Foundation
                                     </p>
@@ -161,9 +161,9 @@ export default function FeaturedEvent() {
                         </div>
 
                         {/* Expert Card: Shreya Santra */}
-                        <div className="relative w-full min-h-[420px] md:min-h-[490px]">
+                        <div className="relative w-[80%] mx-auto min-h-[336px] md:min-h-[392px]">
                             <div className="absolute inset-0 bg-primary translate-x-3 translate-y-3" />
-                            <div className="relative w-full h-full min-h-[420px] md:min-h-[490px] overflow-hidden border-2 border-primary bg-background isolate">
+                            <div className="relative w-full h-full min-h-[336px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                 <img
                                     src="/images/speakers/shreya_santra.png"
                                     alt="Shreya Santra"
