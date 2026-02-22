@@ -75,12 +75,12 @@ export default function WebinarRegistrationForm() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-foreground leading-tight">
-                            "The 2030 Horizon and Beyond: <br />
-                            <span className="text-primary mt-2 block">Skills, Mindsets, and Learning"</span>
+                            &quot;The 2030 Horizon and Beyond: <br />
+                            <span className="text-primary mt-2 block">Skills, Mindsets, and Learning&quot;</span>
                         </h2>
 
                         <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                            How do we prepare ourselves and the next generation for careers that don't exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
+                            How do we prepare ourselves and the next generation for careers that don&apos;t exist yet? Join our expert panelists as they explore the skills, mindsets, and learning strategies needed to thrive in 2030 and beyond.
                         </p>
 
                         <div className="flex items-start gap-4">

@@ -67,7 +67,7 @@ export default function OurStory() {
                                 We believe that true learning happens beyond textbooks. This event provides a unique platform for young minds (Grades 4-12) to showcase their ideas, compete in hackathons, and engage with thought leaders in the field of STEM.
                             </p>
                             <p>
-                                Whether it's building a project in Scratch, debating the future of AI, or presenting a scientific model, STEMXplore is about empowering the next generation of innovators with the skills they need for the future.
+                                Whether it&apos;s building a project in Scratch, debating the future of AI, or presenting a scientific model, STEMXplore is about empowering the next generation of innovators with the skills they need for the future.
                             </p>
                         </div>
                     </ScrollReveal>

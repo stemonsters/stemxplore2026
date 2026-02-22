@@ -1,8 +1,33 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
+import { ReactNode } from "react";
 import { Users, Lightbulb, MessageSquare, BookOpen, Trophy, Code, Cpu } from "lucide-react";
+
+const EventList = ({ events, title }: { events: { title: string; icon: ReactNode; description: string }[], title: string }) => (
+    <div className="h-full border border-border bg-background">
+        <div className="p-4 border-b border-border bg-muted/30">
+            <h3 className="font-bold text-lg tracking-tight uppercase">{title}</h3>
+        </div>
+        <div className="divide-y divide-border">
+            {events.map((event, index) => (
+                <div
+                    key={index}
+                    className="group hover:bg-primary/5 transition-colors cursor-pointer p-4 flex items-start gap-4"
+                >
+                    <div className="mt-1 text-muted-foreground group-hover:text-primary transition-colors">
+                        {event.icon}
+                    </div>
+                    <div className="flex-1">
+                        <div className="flex justify-between items-center mb-1">
+                            <h4 className="font-bold text-sm group-hover:text-primary transition-colors">{event.title}</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground line-clamp-1">{event.description}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+);
 
 export default function EventBlocks() {
     const leftColumnEvents = [
@@ -35,32 +60,6 @@ export default function EventBlocks() {
             description: "Scratch Based Coding Contest",
         },
     ];
-
-    const EventList = ({ events, title }: { events: any[], title: string }) => (
-        <div className="h-full border border-border bg-background">
-            <div className="p-4 border-b border-border bg-muted/30">
-                <h3 className="font-bold text-lg tracking-tight uppercase">{title}</h3>
-            </div>
-            <div className="divide-y divide-border">
-                {events.map((event, index) => (
-                    <div
-                        key={index}
-                        className="group hover:bg-primary/5 transition-colors cursor-pointer p-4 flex items-start gap-4"
-                    >
-                        <div className="mt-1 text-muted-foreground group-hover:text-primary transition-colors">
-                            {event.icon}
-                        </div>
-                        <div className="flex-1">
-                            <div className="flex justify-between items-center mb-1">
-                                <h4 className="font-bold text-sm group-hover:text-primary transition-colors">{event.title}</h4>
-                            </div>
-                            <p className="text-sm text-muted-foreground line-clamp-1">{event.description}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
 
     return (
         <section className="py-20 container mx-auto px-4">

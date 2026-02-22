@@ -94,7 +94,7 @@ export default function Header() {
                             </Button>
                         )}
                         <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                            <a href="/#register">Contest Registration</a>
+                            <Link href="/#register">Contest Registration</Link>
                         </Button>
                     </div>
                 </nav>
@@ -112,12 +112,12 @@ export default function Header() {
                                 className="absolute right-full mr-3 whitespace-nowrap"
                             >
                                 <div className="relative">
-                                    <a
+                                    <Link
                                         href="/#register"
                                         className="text-xs font-medium text-primary border border-primary/30 bg-primary/5 px-2.5 py-1 rounded-md hover:bg-primary/10 transition-colors"
                                     >
                                         Register Now
-                                    </a>
+                                    </Link>
                                     {/* Subtle pointer */}
                                     <div className="absolute top-1/2 -translate-y-1/2 -right-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-primary/30"></div>
                                 </div>
@@ -160,7 +160,7 @@ export default function Header() {
                                 </Button>
                             )}
                             <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                                <a href="/#register" onClick={() => setIsMobileMenuOpen(false)}>Contest Registration</a>
+                                <Link href="/#register" onClick={() => setIsMobileMenuOpen(false)}>Contest Registration</Link>
                             </Button>
                         </nav>
                     </motion.div>

@@ -101,7 +101,7 @@ export default function About() {
                                     <stat.icon className="w-6 h-6 text-primary" />
                                 </div>
                                 <div className="text-3xl font-bold mb-1 text-primary">
-                                    <CountUp end={stat.end} prefix={(stat as any).prefix || ""} suffix={(stat as any).suffix || ""} />
+                                    <CountUp end={stat.end} prefix={(stat as { prefix?: string }).prefix || ""} suffix={(stat as { suffix?: string }).suffix || ""} />
                                 </div>
                                 <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">{stat.label}</div>
                             </div>
