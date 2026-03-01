@@ -135,10 +135,10 @@ export default function Hero() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-start gap-4 mb-6 md:mb-8">
-                            <Button asChild className="w-full sm:w-48 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 h-auto rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all group">
-                                <a href="#register">
-                                    Register Now <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </a>
+                            <Button asChild className="w-full sm:w-48 bg-muted text-muted-foreground px-6 py-3 h-auto rounded-none border-2 border-border cursor-default pointer-events-none opacity-70">
+                                <span>
+                                    Registration Closed
+                                </span>
                             </Button>
                             <Button asChild variant="outline" className="w-full sm:w-48 px-6 py-3 h-auto rounded-none border-2 border-muted-foreground/20 hover:border-primary hover:text-primary hover:bg-primary/5">
                                 <a href="#about">

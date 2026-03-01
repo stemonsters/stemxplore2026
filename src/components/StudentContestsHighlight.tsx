@@ -29,8 +29,8 @@ export default function StudentContestsHighlight() {
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 tracking-tight">
                                 Student Contests
-                                <span className="block text-primary text-lg mt-2 font-normal">
-                                    Register Now
+                                <span className="block text-muted-foreground text-lg mt-2 font-normal">
+                                    Registrations Closed
                                 </span>
                             </h2>
                             <p className="text-lg md:text-xl text-muted-foreground mb-0 md:mb-8 leading-relaxed">

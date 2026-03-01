@@ -13,6 +13,11 @@ interface NotificationItem {
 
 const notifications: NotificationItem[] = [
     {
+        id: "registration-closed",
+        text: "Contest Registrations are now Closed",
+        highlight: true,
+    },
+    {
         id: "recording",
         text: "Missed the information live session? ",
         linkText: "Watch the recording now!",

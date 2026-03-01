@@ -64,9 +64,7 @@ export default function StudentContestsDetailed() {
                         </div>
 
                         {/* Desktop button */}
-                        <Button asChild size="lg" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 rounded-none shadow-sm border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                            <a href="#register">Register Now</a>
-                        </Button>
+                        <span className="inline-flex items-center px-4 py-2 text-sm font-medium text-muted-foreground bg-muted border-2 border-border rounded-none opacity-70">Registration Closed</span>
                     </ScrollReveal>
 
                     {/* Right Column: Tabs */}
@@ -287,9 +285,7 @@ export default function StudentContestsDetailed() {
                             </div>
                         </Tabs>
                         {/* Mobile button - full width under tabs */}
-                        <Button asChild size="lg" className="md:hidden w-full mt-6 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none shadow-sm border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                            <a href="#register">Register Now</a>
-                        </Button>
+                        <span className="md:hidden w-full mt-6 inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-muted-foreground bg-muted border-2 border-border rounded-none opacity-70">Registration Closed</span>
                     </ScrollReveal>
                 </div>
 
@@ -427,23 +423,34 @@ export default function StudentContestsDetailed() {
                             </CarouselItem>
 
                             <CarouselItem className="basis-full md:basis-1/2 md:pl-3">
-                                {/* Judge 4: Suma M N */}
+                                {/* Judge 4: Dr Suma M N */}
                                 <div className="relative w-full mx-auto min-h-[360px] md:min-h-[392px]">
                                     <div className="absolute inset-0 bg-primary translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3" />
                                     <div className="relative w-full h-full min-h-[360px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                         <img
                                             src="/images/judges/suma-m-n.jpg"
-                                            alt="Suma M N"
+                                            alt="Dr Suma M N"
                                             className="absolute inset-0 w-full h-full object-cover object-top -z-10"
                                         />
                                         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
                                         <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
                                             <div className="w-12 h-1 bg-primary mb-3" />
-                                            <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Suma M N</h3>
+                                            <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr Suma M N</h3>
                                             <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Technology Manager</p>
                                             <p className="text-xs text-white/90 mb-3 w-full px-2">
                                                 GE Aerospace Research
                                             </p>
+                                            <a
+                                                href="https://www.linkedin.com/in/suma-m-n-5b622515/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                            >
+                                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                                                </svg>
+                                                LinkedIn
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -551,23 +558,34 @@ export default function StudentContestsDetailed() {
                         </div>
                     </div>
 
-                    {/* Judge 4: Suma M N */}
+                    {/* Judge 4: Dr Suma M N */}
                     <div className="relative w-full mx-auto min-h-[360px] md:min-h-[392px]">
                         <div className="absolute inset-0 bg-primary translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3" />
                         <div className="relative w-full h-full min-h-[360px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                             <img
                                 src="/images/judges/suma-m-n.jpg"
-                                alt="Suma M N"
+                                alt="Dr Suma M N"
                                 className="absolute inset-0 w-full h-full object-cover object-top -z-10"
                             />
                             <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
                             <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
                                 <div className="w-12 h-1 bg-primary mb-3" />
-                                <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Suma M N</h3>
+                                <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr Suma M N</h3>
                                 <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Technology Manager</p>
                                 <p className="text-xs text-white/90 mb-3 w-full px-2">
                                     GE Aerospace Research
                                 </p>
+                                <a
+                                    href="https://www.linkedin.com/in/suma-m-n-5b622515/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white transition-colors"
+                                >
+                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
+                                    </svg>
+                                    LinkedIn
+                                </a>
                             </div>
                         </div>
                     </div>

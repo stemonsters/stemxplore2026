@@ -93,8 +93,8 @@ export default function Header() {
                                 <Link href="/webinar-registration">Webinar Registration</Link>
                             </Button>
                         )}
-                        <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                            <Link href="/#register">Contest Registration</Link>
+                        <Button asChild className="bg-muted text-muted-foreground rounded-none border-2 border-border cursor-default pointer-events-none opacity-70">
+                            <span>Registration Closed</span>
                         </Button>
                     </div>
                 </nav>
@@ -114,9 +114,9 @@ export default function Header() {
                                 <div className="relative">
                                     <Link
                                         href="/#register"
-                                        className="text-xs font-medium text-primary border border-primary/30 bg-primary/5 px-2.5 py-1 rounded-md hover:bg-primary/10 transition-colors"
+                                        className="text-xs font-medium text-muted-foreground border border-border bg-muted/50 px-2.5 py-1 rounded-md"
                                     >
-                                        Register Now
+                                        Registration Closed
                                     </Link>
                                     {/* Subtle pointer */}
                                     <div className="absolute top-1/2 -translate-y-1/2 -right-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-primary/30"></div>
@@ -159,8 +159,8 @@ export default function Header() {
                                     <Link href="/webinar-registration" onClick={() => setIsMobileMenuOpen(false)}>Webinar Registration</Link>
                                 </Button>
                             )}
-                            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-none border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all">
-                                <Link href="/#register" onClick={() => setIsMobileMenuOpen(false)}>Contest Registration</Link>
+                            <Button asChild className="w-full bg-muted text-muted-foreground rounded-none border-2 border-border cursor-default pointer-events-none opacity-70">
+                                <span>Registration Closed</span>
                             </Button>
                         </nav>
                     </motion.div>
