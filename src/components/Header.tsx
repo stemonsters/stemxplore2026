@@ -90,7 +90,7 @@ export default function Header() {
                     <div className="flex items-center gap-2">
                         {pathname !== "/webinar-registration" && (
                             <Button asChild variant="outline" className="rounded-none border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
-                                <Link href="/#webinar-live">Watch Webinar</Link>
+                                <Link href="/#webinar-live">Join Webinar</Link>
                             </Button>
                         )}
                         <Button asChild className="bg-muted text-muted-foreground rounded-none border-2 border-border cursor-default pointer-events-none opacity-70">
@@ -156,7 +156,7 @@ export default function Header() {
                             ))}
                             {pathname !== "/webinar-registration" && (
                                 <Button asChild variant="outline" className="w-full rounded-none border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
-                                    <Link href="/#webinar-live" onClick={() => setIsMobileMenuOpen(false)}>Watch Webinar</Link>
+                                    <Link href="/#webinar-live" onClick={() => setIsMobileMenuOpen(false)}>Join Webinar</Link>
                                 </Button>
                             )}
                             <Button asChild className="w-full bg-muted text-muted-foreground rounded-none border-2 border-border cursor-default pointer-events-none opacity-70">

@@ -86,7 +86,7 @@ export default function FeaturedEvent() {
                             <div className="flex flex-col items-start gap-2 mt-4">
                                 <Button asChild className="rounded-none bg-primary text-primary-foreground hover:bg-primary/90 border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all cursor-pointer px-8 py-4 text-lg">
                                     <a href="#webinar-live">
-                                        Watch Webinar
+                                        Join Webinar
                                     </a>
                                 </Button>
                             </div>
