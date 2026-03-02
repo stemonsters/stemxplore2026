@@ -85,8 +85,8 @@ export default function FeaturedEvent() {
 
                             <div className="flex flex-col items-start gap-2 mt-4">
                                 <Button asChild className="rounded-none bg-primary text-primary-foreground hover:bg-primary/90 border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary transition-all cursor-pointer px-8 py-4 text-lg">
-                                    <a href="/webinar-registration">
-                                        Register for Webinar
+                                    <a href="#webinar-live">
+                                        Watch Webinar
                                     </a>
                                 </Button>
                             </div>
@@ -103,6 +103,7 @@ export default function FeaturedEvent() {
                         </div>
                     </div>
                 </ScrollReveal>
+
 
                 {/* Mobile Carousel View */}
                 <div className="block lg:hidden w-full pb-8">
@@ -188,19 +189,19 @@ export default function FeaturedEvent() {
                             </CarouselItem>
 
                             <CarouselItem className="basis-full md:basis-1/2 md:pl-3">
-                                {/* Expert Card: Shreya Santra */}
+                                {/* Expert Card: Dr. Shreya Santra */}
                                 <div className="relative w-full mx-auto min-h-[360px] md:min-h-[392px]">
                                     <div className="absolute inset-0 bg-primary translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3" />
                                     <div className="relative w-full h-full min-h-[360px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                                         <img
                                             src="/images/speakers/shreya_santra.png"
-                                            alt="Shreya Santra"
+                                            alt="Dr. Shreya Santra"
                                             className="absolute inset-0 w-full h-full object-cover object-top -z-10"
                                         />
                                         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
                                         <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
                                             <div className="w-12 h-1 bg-primary mb-3" />
-                                            <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Shreya Santra</h3>
+                                            <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr. Shreya Santra</h3>
                                             <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Specially Appointed Lecturer</p>
                                             <p className="text-xs text-white/90 mb-3 w-full px-2">
                                                 Dept. Aerospace Engineering, Tohoku University Japan
@@ -325,19 +326,19 @@ export default function FeaturedEvent() {
                         </div>
                     </div>
 
-                    {/* Expert Card: Shreya Santra */}
+                    {/* Expert Card: Dr. Shreya Santra */}
                     <div className="relative w-full mx-auto min-h-[360px] md:min-h-[392px]">
                         <div className="absolute inset-0 bg-primary translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3" />
                         <div className="relative w-full h-full min-h-[360px] md:min-h-[392px] overflow-hidden border-2 border-primary bg-background isolate">
                             <img
                                 src="/images/speakers/shreya_santra.png"
-                                alt="Shreya Santra"
+                                alt="Dr. Shreya Santra"
                                 className="absolute inset-0 w-full h-full object-cover object-top -z-10"
                             />
                             <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent -z-10" />
                             <div className="absolute inset-x-0 bottom-0 p-4 pb-5 flex flex-col items-center text-center z-10 w-full">
                                 <div className="w-12 h-1 bg-primary mb-3" />
-                                <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Shreya Santra</h3>
+                                <h3 className="text-xl font-bold text-white mb-0.5 tracking-tight">Dr. Shreya Santra</h3>
                                 <p className="text-sm font-bold text-primary mb-1 uppercase tracking-wider">Specially Appointed Lecturer</p>
                                 <p className="text-xs text-white/90 mb-3 w-full px-2">
                                     Dept. Aerospace Engineering, Tohoku University Japan
@@ -389,6 +390,23 @@ export default function FeaturedEvent() {
                         </div>
                     </div>
                 </div>
+                {/* StreamYard Embed Section */}
+                <ScrollReveal delay={0.3} className="mt-20">
+                    <div id="webinar-live" className="w-full border-4 border-primary/20 shadow-2xl overflow-hidden bg-black/5 group relative scroll-mt-24">
+                        <div className="absolute inset-0 bg-primary/5 -z-10 group-hover:bg-primary/10 transition-colors duration-500" />
+                        <div className="w-full relative aspect-video min-h-[400px] md:min-h-0">
+                            <iframe
+                                src="https://streamyard.com/watch/UB7PCf575v8X?embed=true"
+                                width="100%"
+                                height="100%"
+                                frameBorder="0"
+                                allow="autoplay; fullscreen"
+                                className="absolute inset-0 w-full h-full overflow-hidden"
+                                title="StreamYard Webinar"
+                            ></iframe>
+                        </div>
+                    </div>
+                </ScrollReveal>
             </div>
         </section>
     );

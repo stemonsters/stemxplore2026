@@ -32,11 +32,11 @@ export default function Home() {
       <StructuredData />
       <Header />
       <Hero />
+      <FeaturedEvent />
       <StudentContestsHighlight />
       <ImportantDates />
       <ApplicationSteps />
 
-      <FeaturedEvent />
       <StudentContestsDetailed />
 
       <Schedule />
