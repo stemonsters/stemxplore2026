@@ -141,8 +141,8 @@ export default function Hero() {
                                 </span>
                             </Button>
                             <Button asChild variant="outline" className="w-full sm:w-48 px-6 py-3 h-auto rounded-none border-2 border-muted-foreground/20 hover:border-primary hover:text-primary hover:bg-primary/5">
-                                <a href="#about">
-                                    Know More
+                                <a href="#events">
+                                    Webinar Registration
                                 </a>
                             </Button>
                         </div>

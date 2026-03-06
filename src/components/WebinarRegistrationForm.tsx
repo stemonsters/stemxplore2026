@@ -60,7 +60,7 @@ export default function WebinarRegistrationForm() {
     };
 
     return (
-        <section className="py-12 bg-background relative overflow-hidden border-b border-border">
+        <section id="webinar-registration" className="py-12 bg-background relative overflow-hidden border-b border-border scroll-mt-20">
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:32px_32px]" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
